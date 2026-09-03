@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "images:optimize": "node scripts/optimize-team-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}
