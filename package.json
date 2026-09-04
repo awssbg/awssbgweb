@@ -1,6 +1,11 @@
 {
   "scripts": {
-    "images:optimize": "node scripts/optimize-team-images.js"
+    "build": "node scripts/build-site.js",
+    "images:optimize": "node scripts/optimize-team-images.js",
+    "certifications:seed": "node scripts/seed-certifications.js && node scripts/import-catalog.js",
+    "questions:export": "node scripts/export-existing-questions.js",
+    "questions:import": "node scripts/import-questions.js",
+    "backend:check": "node --check certification-services.js && node --check certification-cloud-flow.js && node --check scripts/build-site.js && node --check scripts/import-questions.js && node --check scripts/seed-certifications.js && node --check scripts/import-catalog.js && node --check scripts/export-existing-questions.js && node tests/backend-contract.test.js && npm run build && node tests/public-build.test.js"
   },
   "dependencies": {
     "sharp": "^0.35.4"

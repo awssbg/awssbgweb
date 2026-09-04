@@ -1,0 +1,223 @@
+[
+  {
+    "slug": "ai-business-strategist",
+    "code": "AI-B01",
+    "name": "AWS Certified AI Business Strategist",
+    "short_name": "AI Business Strategist",
+    "level": "Business",
+    "description": "Validate business judgment for evaluating, governing, and scaling AI adoption.",
+    "official_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+    "official_question_count": 85,
+    "official_duration_minutes": 170,
+    "domains": [
+      "AI strategy",
+      "Business value",
+      "Governance"
+    ]
+  },
+  {
+    "slug": "cloud-practitioner",
+    "code": "CLF-C02",
+    "name": "AWS Certified Cloud Practitioner",
+    "short_name": "Cloud Practitioner",
+    "level": "Foundational",
+    "description": "Validate foundational cloud, AWS services, and cloud-computing knowledge.",
+    "official_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    "official_question_count": 65,
+    "official_duration_minutes": 90,
+    "domains": [
+      "Cloud concepts",
+      "Security and compliance",
+      "Cloud technology and services",
+      "Billing and pricing"
+    ]
+  },
+  {
+    "slug": "ai-practitioner",
+    "code": "AIF-C01",
+    "name": "AWS Certified AI Practitioner",
+    "short_name": "AI Practitioner",
+    "level": "Foundational",
+    "description": "Validate foundational artificial intelligence, machine learning, generative AI, and AWS AI service knowledge.",
+    "official_url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    "official_question_count": 65,
+    "official_duration_minutes": 90,
+    "domains": [
+      "AI and ML fundamentals",
+      "Generative AI fundamentals",
+      "Foundation models",
+      "Responsible AI"
+    ]
+  },
+  {
+    "slug": "solutions-architect-associate",
+    "code": "SAA-C03",
+    "name": "AWS Certified Solutions Architect – Associate",
+    "short_name": "Solutions Architect – Associate",
+    "level": "Associate",
+    "description": "Design practical, secure, resilient AWS architectures.",
+    "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+    "official_question_count": 65,
+    "official_duration_minutes": 130,
+    "domains": [
+      "Secure Architectures",
+      "Resilient Architectures",
+      "High-Performing Architectures",
+      "Cost-Optimized Architectures"
+    ]
+  },
+  {
+    "slug": "developer-associate",
+    "code": "DVA-C02",
+    "name": "AWS Certified Developer – Associate",
+    "short_name": "Developer – Associate",
+    "level": "Associate",
+    "description": "Develop, test, deploy, and debug AWS Cloud applications.",
+    "official_url": "https://aws.amazon.com/certification/certified-developer-associate/",
+    "official_question_count": 65,
+    "official_duration_minutes": 130,
+    "domains": [
+      "Development with AWS services",
+      "Security",
+      "Deployment",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "slug": "cloudops-associate",
+    "code": "SOA-C02",
+    "name": "AWS Certified CloudOps Engineer – Associate",
+    "short_name": "CloudOps Engineer – Associate",
+    "level": "Associate",
+    "description": "Deploy, manage, and operate workloads on AWS.",
+    "official_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+    "official_question_count": 65,
+    "official_duration_minutes": 130,
+    "domains": [
+      "Monitoring",
+      "Reliability",
+      "Security",
+      "Networking",
+      "Cost optimization"
+    ]
+  },
+  {
+    "slug": "data-engineer-associate",
+    "code": "DEA-C01",
+    "name": "AWS Certified Data Engineer – Associate",
+    "short_name": "Data Engineer – Associate",
+    "level": "Associate",
+    "description": "Design data models, manage data lifecycles, and ensure data quality on AWS.",
+    "official_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+    "official_question_count": 65,
+    "official_duration_minutes": 130,
+    "domains": [
+      "Data ingestion",
+      "Data transformation",
+      "Data operations",
+      "Data security and governance"
+    ]
+  },
+  {
+    "slug": "machine-learning-engineer-associate",
+    "code": "MLA-C01",
+    "name": "AWS Certified Machine Learning Engineer – Associate",
+    "short_name": "Machine Learning Engineer – Associate",
+    "level": "Associate",
+    "description": "Implement and operationalize machine-learning workloads in production.",
+    "official_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+    "official_question_count": 65,
+    "official_duration_minutes": 130,
+    "domains": [
+      "Data preparation",
+      "Model development",
+      "Deployment",
+      "Monitoring"
+    ]
+  },
+  {
+    "slug": "solutions-architect-professional",
+    "code": "SAP-C02",
+    "name": "AWS Certified Solutions Architect – Professional",
+    "short_name": "Solutions Architect – Professional",
+    "level": "Professional",
+    "description": "Design solutions for complex organizational and technical requirements.",
+    "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+    "official_question_count": 75,
+    "official_duration_minutes": 180,
+    "domains": [
+      "Organizational complexity",
+      "New solutions",
+      "Continuous improvement",
+      "Migration"
+    ]
+  },
+  {
+    "slug": "devops-professional",
+    "code": "DOP-C02",
+    "name": "AWS Certified DevOps Engineer – Professional",
+    "short_name": "DevOps Engineer – Professional",
+    "level": "Professional",
+    "description": "Automate, operate, secure, and improve resilient delivery systems.",
+    "official_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+    "official_question_count": 75,
+    "official_duration_minutes": 180,
+    "domains": [
+      "SDLC automation",
+      "Configuration management",
+      "Resilient cloud solutions",
+      "Monitoring and logging"
+    ]
+  },
+  {
+    "slug": "generative-ai-developer-professional",
+    "code": "AIG-C01",
+    "name": "AWS Certified Generative AI Developer – Professional",
+    "short_name": "Generative AI Developer – Professional",
+    "level": "Professional",
+    "description": "Build production-grade generative-AI solutions on AWS.",
+    "official_url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+    "official_question_count": null,
+    "official_duration_minutes": null,
+    "domains": [
+      "Generative AI applications",
+      "Foundation models",
+      "Security",
+      "Operations"
+    ]
+  },
+  {
+    "slug": "advanced-networking-specialty",
+    "code": "ANS-C01",
+    "name": "AWS Certified Advanced Networking – Specialty",
+    "short_name": "Advanced Networking – Specialty",
+    "level": "Specialty",
+    "description": "Handle critical and complex networking on AWS.",
+    "official_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+    "official_question_count": 65,
+    "official_duration_minutes": 170,
+    "domains": [
+      "Network design",
+      "Network implementation",
+      "Network management",
+      "Security"
+    ]
+  },
+  {
+    "slug": "security-specialty",
+    "code": "SCS-C02",
+    "name": "AWS Certified Security – Specialty",
+    "short_name": "Security – Specialty",
+    "level": "Specialty",
+    "description": "Secure AWS workloads, architectures, and data.",
+    "official_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+    "official_question_count": 65,
+    "official_duration_minutes": 170,
+    "domains": [
+      "Threat detection",
+      "Security logging",
+      "Infrastructure security",
+      "Data protection"
+    ]
+  }
+]

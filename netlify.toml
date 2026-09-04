@@ -1,3 +1,8 @@
+ [build]
+  command = "npm run build"
+  publish = "site"
+  functions = "netlify/functions"
+
 [[redirects]]
   from = "/certification-practice"
   to = "/certification-practice.html"
@@ -24,13 +29,18 @@
   status = 200
 
 [[redirects]]
-  from = "/certification-practice/certification-data.js"
-  to = "/certification-data.js"
+  from = "/certification-practice/certification-services.js"
+  to = "/certification-services.js"
   status = 200
 
 [[redirects]]
-  from = "/certification-practice/certification-practice.js"
-  to = "/certification-practice.js"
+  from = "/certification-practice/supabase-public-config.js"
+  to = "/supabase-public-config.js"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/certification-cloud-flow.js"
+  to = "/certification-cloud-flow.js"
   status = 200
 
 [[redirects]]

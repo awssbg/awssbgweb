@@ -1,0 +1,2 @@
+-- Run after migrations. Certification/domain seed comes from certification-data.js via scripts/seed-certifications.js.
+-- Question seed is generated from the existing original SAA community bank with scripts/import-questions.js.

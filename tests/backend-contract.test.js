@@ -1,0 +1,15 @@
+const fs = require('fs'); const assert = require('assert');
+const sql = fs.readFileSync('supabase/migrations/001_certification_practice.sql','utf8');
+for (const table of ['profiles','certifications','certification_domains','questions','question_options','question_answers','exam_attempts','exam_attempt_questions','exam_answers','user_question_history','saved_questions','practice_domain_attempts','audit_events']) assert(sql.includes(`public.${table}`), `${table} is missing`);
+for (const fn of ['create_exam','save_exam_answer','submit_exam','get_exam_review','my_dashboard']) assert(sql.includes(`function public.${fn}`), `${fn} is missing`);
+assert(sql.includes('enable row level security'), 'RLS must be enabled');
+assert(sql.includes('auth.uid()'), 'ownership must be session-based');
+assert(!/grant select on public\.question_answers to anon/i.test(sql), 'answer keys must not be public');
+assert(sql.includes('keeps_current_role'), 'normal users must not self-promote via profile updates');
+assert(/reference_links jsonb not null/i.test(sql), 'question reference_links must use a safe identifier');
+assert(!/\breferences\s+jsonb/i.test(sql), 'reserved references must not be used as a column name');
+assert(/^begin;[\s\S]*commit;\s*$/im.test(sql), 'initial migration must be transactional');
+const questions = JSON.parse(fs.readFileSync('supabase/existing-questions.seed.json', 'utf8'));
+assert(questions.every(question => question.certification === 'solutions-architect-associate'), 'existing SAA questions must use the canonical SAA slug');
+assert(questions.every(question => Array.isArray(question.reference_links)), 'question seed must use reference_links');
+console.log('Backend contract checks passed.');

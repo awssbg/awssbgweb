@@ -1,0 +1,2282 @@
+[
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-001",
+    "domain": "Secure Architectures",
+    "question_text": "A company needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Attach an IAM role with only s3:GetObject permission for the required bucket to the EC2 instance."
+      },
+      {
+        "key": "B",
+        "text": "Store an IAM user access key in the application configuration file."
+      },
+      {
+        "key": "C",
+        "text": "Make the bucket public and restrict access by object name."
+      },
+      {
+        "key": "D",
+        "text": "Use the root user access keys in an environment variable."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "An IAM role provides short-lived credentials without embedding secrets. Least-privilege bucket access limits the application to the required action and resource.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-002",
+    "domain": "Secure Architectures",
+    "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Attach an IAM role with only s3:GetObject permission for the required bucket to the EC2 instance."
+      },
+      {
+        "key": "B",
+        "text": "Store an IAM user access key in the application configuration file."
+      },
+      {
+        "key": "C",
+        "text": "Make the bucket public and restrict access by object name."
+      },
+      {
+        "key": "D",
+        "text": "Use the root user access keys in an environment variable."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "An IAM role provides short-lived credentials without embedding secrets. Least-privilege bucket access limits the application to the required action and resource.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-003",
+    "domain": "Secure Architectures",
+    "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Attach an IAM role with only s3:GetObject permission for the required bucket to the EC2 instance."
+      },
+      {
+        "key": "B",
+        "text": "Store an IAM user access key in the application configuration file."
+      },
+      {
+        "key": "C",
+        "text": "Make the bucket public and restrict access by object name."
+      },
+      {
+        "key": "D",
+        "text": "Use the root user access keys in an environment variable."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "An IAM role provides short-lived credentials without embedding secrets. Least-privilege bucket access limits the application to the required action and resource.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-004",
+    "domain": "Secure Architectures",
+    "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Attach an IAM role with only s3:GetObject permission for the required bucket to the EC2 instance."
+      },
+      {
+        "key": "B",
+        "text": "Store an IAM user access key in the application configuration file."
+      },
+      {
+        "key": "C",
+        "text": "Make the bucket public and restrict access by object name."
+      },
+      {
+        "key": "D",
+        "text": "Use the root user access keys in an environment variable."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "An IAM role provides short-lived credentials without embedding secrets. Least-privilege bucket access limits the application to the required action and resource.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-005",
+    "domain": "Secure Architectures",
+    "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Attach an IAM role with only s3:GetObject permission for the required bucket to the EC2 instance."
+      },
+      {
+        "key": "B",
+        "text": "Store an IAM user access key in the application configuration file."
+      },
+      {
+        "key": "C",
+        "text": "Make the bucket public and restrict access by object name."
+      },
+      {
+        "key": "D",
+        "text": "Use the root user access keys in an environment variable."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "An IAM role provides short-lived credentials without embedding secrets. Least-privilege bucket access limits the application to the required action and resource.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-006",
+    "domain": "Secure Architectures",
+    "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Config with a managed rule and notifications."
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront access logs only."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball Edge."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Config evaluates resource configurations over time. Managed rules can identify public S3 buckets and trigger remediation workflows.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-007",
+    "domain": "Secure Architectures",
+    "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Config with a managed rule and notifications."
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront access logs only."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball Edge."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Config evaluates resource configurations over time. Managed rules can identify public S3 buckets and trigger remediation workflows.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-008",
+    "domain": "Secure Architectures",
+    "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Config with a managed rule and notifications."
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront access logs only."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball Edge."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Config evaluates resource configurations over time. Managed rules can identify public S3 buckets and trigger remediation workflows.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-009",
+    "domain": "Secure Architectures",
+    "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Config with a managed rule and notifications."
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront access logs only."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball Edge."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Config evaluates resource configurations over time. Managed rules can identify public S3 buckets and trigger remediation workflows.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-010",
+    "domain": "Secure Architectures",
+    "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Config with a managed rule and notifications."
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront access logs only."
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball Edge."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Config evaluates resource configurations over time. Managed rules can identify public S3 buckets and trigger remediation workflows.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-011",
+    "domain": "Resilient Architectures",
+    "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Run instances in an Auto Scaling group across multiple Availability Zones behind an Application Load Balancer."
+      },
+      {
+        "key": "B",
+        "text": "Run one large instance with a larger EBS volume."
+      },
+      {
+        "key": "C",
+        "text": "Place all instances in one Availability Zone with frequent snapshots."
+      },
+      {
+        "key": "D",
+        "text": "Use a single NAT gateway for all workloads."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Multi-AZ Auto Scaling with an Application Load Balancer removes dependence on a single Availability Zone and replaces unhealthy capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-012",
+    "domain": "Resilient Architectures",
+    "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Run instances in an Auto Scaling group across multiple Availability Zones behind an Application Load Balancer."
+      },
+      {
+        "key": "B",
+        "text": "Run one large instance with a larger EBS volume."
+      },
+      {
+        "key": "C",
+        "text": "Place all instances in one Availability Zone with frequent snapshots."
+      },
+      {
+        "key": "D",
+        "text": "Use a single NAT gateway for all workloads."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Multi-AZ Auto Scaling with an Application Load Balancer removes dependence on a single Availability Zone and replaces unhealthy capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-013",
+    "domain": "Resilient Architectures",
+    "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Run instances in an Auto Scaling group across multiple Availability Zones behind an Application Load Balancer."
+      },
+      {
+        "key": "B",
+        "text": "Run one large instance with a larger EBS volume."
+      },
+      {
+        "key": "C",
+        "text": "Place all instances in one Availability Zone with frequent snapshots."
+      },
+      {
+        "key": "D",
+        "text": "Use a single NAT gateway for all workloads."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Multi-AZ Auto Scaling with an Application Load Balancer removes dependence on a single Availability Zone and replaces unhealthy capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-014",
+    "domain": "Resilient Architectures",
+    "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Run instances in an Auto Scaling group across multiple Availability Zones behind an Application Load Balancer."
+      },
+      {
+        "key": "B",
+        "text": "Run one large instance with a larger EBS volume."
+      },
+      {
+        "key": "C",
+        "text": "Place all instances in one Availability Zone with frequent snapshots."
+      },
+      {
+        "key": "D",
+        "text": "Use a single NAT gateway for all workloads."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Multi-AZ Auto Scaling with an Application Load Balancer removes dependence on a single Availability Zone and replaces unhealthy capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-015",
+    "domain": "Resilient Architectures",
+    "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Run instances in an Auto Scaling group across multiple Availability Zones behind an Application Load Balancer."
+      },
+      {
+        "key": "B",
+        "text": "Run one large instance with a larger EBS volume."
+      },
+      {
+        "key": "C",
+        "text": "Place all instances in one Availability Zone with frequent snapshots."
+      },
+      {
+        "key": "D",
+        "text": "Use a single NAT gateway for all workloads."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Multi-AZ Auto Scaling with an Application Load Balancer removes dependence on a single Availability Zone and replaces unhealthy capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-016",
+    "domain": "Resilient Architectures",
+    "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use DynamoDB global tables with application routing designed for multiple Regions."
+      },
+      {
+        "key": "B",
+        "text": "Use one Multi-AZ RDS instance and wait for it to recover."
+      },
+      {
+        "key": "C",
+        "text": "Store the orders on an EC2 instance store volume."
+      },
+      {
+        "key": "D",
+        "text": "Use an S3 lifecycle rule to copy backups weekly."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB global tables replicate data across selected Regions and support multi-Region application designs. Multi-AZ protects within a Region, not against a regional event.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-017",
+    "domain": "Resilient Architectures",
+    "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use DynamoDB global tables with application routing designed for multiple Regions."
+      },
+      {
+        "key": "B",
+        "text": "Use one Multi-AZ RDS instance and wait for it to recover."
+      },
+      {
+        "key": "C",
+        "text": "Store the orders on an EC2 instance store volume."
+      },
+      {
+        "key": "D",
+        "text": "Use an S3 lifecycle rule to copy backups weekly."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB global tables replicate data across selected Regions and support multi-Region application designs. Multi-AZ protects within a Region, not against a regional event.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-018",
+    "domain": "Resilient Architectures",
+    "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use DynamoDB global tables with application routing designed for multiple Regions."
+      },
+      {
+        "key": "B",
+        "text": "Use one Multi-AZ RDS instance and wait for it to recover."
+      },
+      {
+        "key": "C",
+        "text": "Store the orders on an EC2 instance store volume."
+      },
+      {
+        "key": "D",
+        "text": "Use an S3 lifecycle rule to copy backups weekly."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB global tables replicate data across selected Regions and support multi-Region application designs. Multi-AZ protects within a Region, not against a regional event.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-019",
+    "domain": "Resilient Architectures",
+    "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use DynamoDB global tables with application routing designed for multiple Regions."
+      },
+      {
+        "key": "B",
+        "text": "Use one Multi-AZ RDS instance and wait for it to recover."
+      },
+      {
+        "key": "C",
+        "text": "Store the orders on an EC2 instance store volume."
+      },
+      {
+        "key": "D",
+        "text": "Use an S3 lifecycle rule to copy backups weekly."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB global tables replicate data across selected Regions and support multi-Region application designs. Multi-AZ protects within a Region, not against a regional event.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-020",
+    "domain": "Resilient Architectures",
+    "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use DynamoDB global tables with application routing designed for multiple Regions."
+      },
+      {
+        "key": "B",
+        "text": "Use one Multi-AZ RDS instance and wait for it to recover."
+      },
+      {
+        "key": "C",
+        "text": "Store the orders on an EC2 instance store volume."
+      },
+      {
+        "key": "D",
+        "text": "Use an S3 lifecycle rule to copy backups weekly."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB global tables replicate data across selected Regions and support multi-Region application designs. Multi-AZ protects within a Region, not against a regional event.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-021",
+    "domain": "High-Performing Architectures",
+    "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Generate S3 presigned URLs so clients upload directly to Amazon S3."
+      },
+      {
+        "key": "B",
+        "text": "Increase the web server instance size."
+      },
+      {
+        "key": "C",
+        "text": "Send files through a NAT gateway before storing them."
+      },
+      {
+        "key": "D",
+        "text": "Save all files in an Amazon EFS file system."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 while retaining controlled, time-limited access. This removes file transfer work from the application tier.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-022",
+    "domain": "High-Performing Architectures",
+    "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Generate S3 presigned URLs so clients upload directly to Amazon S3."
+      },
+      {
+        "key": "B",
+        "text": "Increase the web server instance size."
+      },
+      {
+        "key": "C",
+        "text": "Send files through a NAT gateway before storing them."
+      },
+      {
+        "key": "D",
+        "text": "Save all files in an Amazon EFS file system."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 while retaining controlled, time-limited access. This removes file transfer work from the application tier.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-023",
+    "domain": "High-Performing Architectures",
+    "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Generate S3 presigned URLs so clients upload directly to Amazon S3."
+      },
+      {
+        "key": "B",
+        "text": "Increase the web server instance size."
+      },
+      {
+        "key": "C",
+        "text": "Send files through a NAT gateway before storing them."
+      },
+      {
+        "key": "D",
+        "text": "Save all files in an Amazon EFS file system."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 while retaining controlled, time-limited access. This removes file transfer work from the application tier.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-024",
+    "domain": "High-Performing Architectures",
+    "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Generate S3 presigned URLs so clients upload directly to Amazon S3."
+      },
+      {
+        "key": "B",
+        "text": "Increase the web server instance size."
+      },
+      {
+        "key": "C",
+        "text": "Send files through a NAT gateway before storing them."
+      },
+      {
+        "key": "D",
+        "text": "Save all files in an Amazon EFS file system."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 while retaining controlled, time-limited access. This removes file transfer work from the application tier.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-025",
+    "domain": "High-Performing Architectures",
+    "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Generate S3 presigned URLs so clients upload directly to Amazon S3."
+      },
+      {
+        "key": "B",
+        "text": "Increase the web server instance size."
+      },
+      {
+        "key": "C",
+        "text": "Send files through a NAT gateway before storing them."
+      },
+      {
+        "key": "D",
+        "text": "Save all files in an Amazon EFS file system."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Presigned URLs let clients upload directly to S3 while retaining controlled, time-limited access. This removes file transfer work from the application tier.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-026",
+    "domain": "High-Performing Architectures",
+    "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use Amazon CloudFront with the S3 bucket as an origin."
+      },
+      {
+        "key": "B",
+        "text": "Move the bucket to a larger EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "Use an EBS volume attached to the web servers."
+      },
+      {
+        "key": "D",
+        "text": "Send every request through AWS Site-to-Site VPN."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront caches static objects at edge locations close to viewers, reducing latency and origin load.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-027",
+    "domain": "High-Performing Architectures",
+    "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use Amazon CloudFront with the S3 bucket as an origin."
+      },
+      {
+        "key": "B",
+        "text": "Move the bucket to a larger EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "Use an EBS volume attached to the web servers."
+      },
+      {
+        "key": "D",
+        "text": "Send every request through AWS Site-to-Site VPN."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront caches static objects at edge locations close to viewers, reducing latency and origin load.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-028",
+    "domain": "High-Performing Architectures",
+    "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use Amazon CloudFront with the S3 bucket as an origin."
+      },
+      {
+        "key": "B",
+        "text": "Move the bucket to a larger EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "Use an EBS volume attached to the web servers."
+      },
+      {
+        "key": "D",
+        "text": "Send every request through AWS Site-to-Site VPN."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront caches static objects at edge locations close to viewers, reducing latency and origin load.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-029",
+    "domain": "High-Performing Architectures",
+    "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use Amazon CloudFront with the S3 bucket as an origin."
+      },
+      {
+        "key": "B",
+        "text": "Move the bucket to a larger EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "Use an EBS volume attached to the web servers."
+      },
+      {
+        "key": "D",
+        "text": "Send every request through AWS Site-to-Site VPN."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront caches static objects at edge locations close to viewers, reducing latency and origin load.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-030",
+    "domain": "High-Performing Architectures",
+    "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use Amazon CloudFront with the S3 bucket as an origin."
+      },
+      {
+        "key": "B",
+        "text": "Move the bucket to a larger EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "Use an EBS volume attached to the web servers."
+      },
+      {
+        "key": "D",
+        "text": "Send every request through AWS Site-to-Site VPN."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront caches static objects at edge locations close to viewers, reducing latency and origin load.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-031",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Schedule nonproduction EC2 instances to stop outside required hours."
+      },
+      {
+        "key": "B",
+        "text": "Use larger On-Demand instances at all times."
+      },
+      {
+        "key": "C",
+        "text": "Store application logs only in instance memory."
+      },
+      {
+        "key": "D",
+        "text": "Move the workload to a single Availability Zone."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Stopping nonproduction instances when they are not needed avoids compute charges while retaining the ability to restart them.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-032",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Schedule nonproduction EC2 instances to stop outside required hours."
+      },
+      {
+        "key": "B",
+        "text": "Use larger On-Demand instances at all times."
+      },
+      {
+        "key": "C",
+        "text": "Store application logs only in instance memory."
+      },
+      {
+        "key": "D",
+        "text": "Move the workload to a single Availability Zone."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Stopping nonproduction instances when they are not needed avoids compute charges while retaining the ability to restart them.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-033",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Schedule nonproduction EC2 instances to stop outside required hours."
+      },
+      {
+        "key": "B",
+        "text": "Use larger On-Demand instances at all times."
+      },
+      {
+        "key": "C",
+        "text": "Store application logs only in instance memory."
+      },
+      {
+        "key": "D",
+        "text": "Move the workload to a single Availability Zone."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Stopping nonproduction instances when they are not needed avoids compute charges while retaining the ability to restart them.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-034",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Schedule nonproduction EC2 instances to stop outside required hours."
+      },
+      {
+        "key": "B",
+        "text": "Use larger On-Demand instances at all times."
+      },
+      {
+        "key": "C",
+        "text": "Store application logs only in instance memory."
+      },
+      {
+        "key": "D",
+        "text": "Move the workload to a single Availability Zone."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Stopping nonproduction instances when they are not needed avoids compute charges while retaining the ability to restart them.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-035",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Schedule nonproduction EC2 instances to stop outside required hours."
+      },
+      {
+        "key": "B",
+        "text": "Use larger On-Demand instances at all times."
+      },
+      {
+        "key": "C",
+        "text": "Store application logs only in instance memory."
+      },
+      {
+        "key": "D",
+        "text": "Move the workload to a single Availability Zone."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Stopping nonproduction instances when they are not needed avoids compute charges while retaining the ability to restart them.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-036",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A company retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use an S3 Lifecycle rule to transition objects to a lower-cost storage class after 30 days."
+      },
+      {
+        "key": "B",
+        "text": "Delete all objects after 30 days."
+      },
+      {
+        "key": "C",
+        "text": "Keep all objects in S3 Standard indefinitely."
+      },
+      {
+        "key": "D",
+        "text": "Copy objects manually to an EC2 instance."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Lifecycle policies automate transitions based on age and access requirements, reducing storage cost while preserving retrieval.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-037",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use an S3 Lifecycle rule to transition objects to a lower-cost storage class after 30 days."
+      },
+      {
+        "key": "B",
+        "text": "Delete all objects after 30 days."
+      },
+      {
+        "key": "C",
+        "text": "Keep all objects in S3 Standard indefinitely."
+      },
+      {
+        "key": "D",
+        "text": "Copy objects manually to an EC2 instance."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Lifecycle policies automate transitions based on age and access requirements, reducing storage cost while preserving retrieval.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-038",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use an S3 Lifecycle rule to transition objects to a lower-cost storage class after 30 days."
+      },
+      {
+        "key": "B",
+        "text": "Delete all objects after 30 days."
+      },
+      {
+        "key": "C",
+        "text": "Keep all objects in S3 Standard indefinitely."
+      },
+      {
+        "key": "D",
+        "text": "Copy objects manually to an EC2 instance."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Lifecycle policies automate transitions based on age and access requirements, reducing storage cost while preserving retrieval.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-039",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use an S3 Lifecycle rule to transition objects to a lower-cost storage class after 30 days."
+      },
+      {
+        "key": "B",
+        "text": "Delete all objects after 30 days."
+      },
+      {
+        "key": "C",
+        "text": "Keep all objects in S3 Standard indefinitely."
+      },
+      {
+        "key": "D",
+        "text": "Copy objects manually to an EC2 instance."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Lifecycle policies automate transitions based on age and access requirements, reducing storage cost while preserving retrieval.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-040",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "medium",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use an S3 Lifecycle rule to transition objects to a lower-cost storage class after 30 days."
+      },
+      {
+        "key": "B",
+        "text": "Delete all objects after 30 days."
+      },
+      {
+        "key": "C",
+        "text": "Keep all objects in S3 Standard indefinitely."
+      },
+      {
+        "key": "D",
+        "text": "Copy objects manually to an EC2 instance."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Lifecycle policies automate transitions based on age and access requirements, reducing storage cost while preserving retrieval.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-041",
+    "domain": "Secure Architectures",
+    "question_text": "A company must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use SSE-KMS with a customer managed AWS KMS key."
+      },
+      {
+        "key": "B",
+        "text": "Use SSE-S3 and share the bucket password."
+      },
+      {
+        "key": "C",
+        "text": "Use an unencrypted EBS volume."
+      },
+      {
+        "key": "D",
+        "text": "Use CloudFront signed cookies for encryption at rest."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "SSE-KMS with a customer managed key provides encryption at rest plus key policies, grants, and auditability through AWS KMS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-042",
+    "domain": "Secure Architectures",
+    "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use SSE-KMS with a customer managed AWS KMS key."
+      },
+      {
+        "key": "B",
+        "text": "Use SSE-S3 and share the bucket password."
+      },
+      {
+        "key": "C",
+        "text": "Use an unencrypted EBS volume."
+      },
+      {
+        "key": "D",
+        "text": "Use CloudFront signed cookies for encryption at rest."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "SSE-KMS with a customer managed key provides encryption at rest plus key policies, grants, and auditability through AWS KMS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-043",
+    "domain": "Secure Architectures",
+    "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use SSE-KMS with a customer managed AWS KMS key."
+      },
+      {
+        "key": "B",
+        "text": "Use SSE-S3 and share the bucket password."
+      },
+      {
+        "key": "C",
+        "text": "Use an unencrypted EBS volume."
+      },
+      {
+        "key": "D",
+        "text": "Use CloudFront signed cookies for encryption at rest."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "SSE-KMS with a customer managed key provides encryption at rest plus key policies, grants, and auditability through AWS KMS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-044",
+    "domain": "Secure Architectures",
+    "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use SSE-KMS with a customer managed AWS KMS key."
+      },
+      {
+        "key": "B",
+        "text": "Use SSE-S3 and share the bucket password."
+      },
+      {
+        "key": "C",
+        "text": "Use an unencrypted EBS volume."
+      },
+      {
+        "key": "D",
+        "text": "Use CloudFront signed cookies for encryption at rest."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "SSE-KMS with a customer managed key provides encryption at rest plus key policies, grants, and auditability through AWS KMS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-045",
+    "domain": "Secure Architectures",
+    "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use SSE-KMS with a customer managed AWS KMS key."
+      },
+      {
+        "key": "B",
+        "text": "Use SSE-S3 and share the bucket password."
+      },
+      {
+        "key": "C",
+        "text": "Use an unencrypted EBS volume."
+      },
+      {
+        "key": "D",
+        "text": "Use CloudFront signed cookies for encryption at rest."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "SSE-KMS with a customer managed key provides encryption at rest plus key policies, grants, and auditability through AWS KMS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-046",
+    "domain": "Resilient Architectures",
+    "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS Multi-AZ deployment."
+      },
+      {
+        "key": "B",
+        "text": "A single RDS instance with manual snapshots."
+      },
+      {
+        "key": "C",
+        "text": "An EC2-hosted database on one instance."
+      },
+      {
+        "key": "D",
+        "text": "An Amazon S3 static website."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "RDS Multi-AZ maintains a standby in another Availability Zone and performs managed failover for supported engine deployments.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-047",
+    "domain": "Resilient Architectures",
+    "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS Multi-AZ deployment."
+      },
+      {
+        "key": "B",
+        "text": "A single RDS instance with manual snapshots."
+      },
+      {
+        "key": "C",
+        "text": "An EC2-hosted database on one instance."
+      },
+      {
+        "key": "D",
+        "text": "An Amazon S3 static website."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "RDS Multi-AZ maintains a standby in another Availability Zone and performs managed failover for supported engine deployments.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-048",
+    "domain": "Resilient Architectures",
+    "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS Multi-AZ deployment."
+      },
+      {
+        "key": "B",
+        "text": "A single RDS instance with manual snapshots."
+      },
+      {
+        "key": "C",
+        "text": "An EC2-hosted database on one instance."
+      },
+      {
+        "key": "D",
+        "text": "An Amazon S3 static website."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "RDS Multi-AZ maintains a standby in another Availability Zone and performs managed failover for supported engine deployments.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-049",
+    "domain": "Resilient Architectures",
+    "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS Multi-AZ deployment."
+      },
+      {
+        "key": "B",
+        "text": "A single RDS instance with manual snapshots."
+      },
+      {
+        "key": "C",
+        "text": "An EC2-hosted database on one instance."
+      },
+      {
+        "key": "D",
+        "text": "An Amazon S3 static website."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "RDS Multi-AZ maintains a standby in another Availability Zone and performs managed failover for supported engine deployments.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-050",
+    "domain": "Resilient Architectures",
+    "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
+    "question_type": "single_answer",
+    "difficulty": "easy",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS Multi-AZ deployment."
+      },
+      {
+        "key": "B",
+        "text": "A single RDS instance with manual snapshots."
+      },
+      {
+        "key": "C",
+        "text": "An EC2-hosted database on one instance."
+      },
+      {
+        "key": "D",
+        "text": "An Amazon S3 static website."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "RDS Multi-AZ maintains a standby in another Availability Zone and performs managed failover for supported engine deployments.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-051",
+    "domain": "High-Performing Architectures",
+    "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon API Gateway, Amazon SQS, and AWS Lambda consumers."
+      },
+      {
+        "key": "B",
+        "text": "A fixed fleet of one EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "A manual file transfer process."
+      },
+      {
+        "key": "D",
+        "text": "A single EBS volume shared over the internet."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "API Gateway accepts requests, SQS buffers bursts, and Lambda scales consumers based on queued work. This decouples ingestion from processing.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-052",
+    "domain": "High-Performing Architectures",
+    "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon API Gateway, Amazon SQS, and AWS Lambda consumers."
+      },
+      {
+        "key": "B",
+        "text": "A fixed fleet of one EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "A manual file transfer process."
+      },
+      {
+        "key": "D",
+        "text": "A single EBS volume shared over the internet."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "API Gateway accepts requests, SQS buffers bursts, and Lambda scales consumers based on queued work. This decouples ingestion from processing.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-053",
+    "domain": "High-Performing Architectures",
+    "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon API Gateway, Amazon SQS, and AWS Lambda consumers."
+      },
+      {
+        "key": "B",
+        "text": "A fixed fleet of one EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "A manual file transfer process."
+      },
+      {
+        "key": "D",
+        "text": "A single EBS volume shared over the internet."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "API Gateway accepts requests, SQS buffers bursts, and Lambda scales consumers based on queued work. This decouples ingestion from processing.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-054",
+    "domain": "High-Performing Architectures",
+    "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon API Gateway, Amazon SQS, and AWS Lambda consumers."
+      },
+      {
+        "key": "B",
+        "text": "A fixed fleet of one EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "A manual file transfer process."
+      },
+      {
+        "key": "D",
+        "text": "A single EBS volume shared over the internet."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "API Gateway accepts requests, SQS buffers bursts, and Lambda scales consumers based on queued work. This decouples ingestion from processing.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-055",
+    "domain": "High-Performing Architectures",
+    "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon API Gateway, Amazon SQS, and AWS Lambda consumers."
+      },
+      {
+        "key": "B",
+        "text": "A fixed fleet of one EC2 instance."
+      },
+      {
+        "key": "C",
+        "text": "A manual file transfer process."
+      },
+      {
+        "key": "D",
+        "text": "A single EBS volume shared over the internet."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "API Gateway accepts requests, SQS buffers bursts, and Lambda scales consumers based on queued work. This decouples ingestion from processing.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-056",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2 Spot Instances."
+      },
+      {
+        "key": "B",
+        "text": "Dedicated Hosts only."
+      },
+      {
+        "key": "C",
+        "text": "A permanently running On-Demand instance."
+      },
+      {
+        "key": "D",
+        "text": "Provisioned IOPS for an unused volume."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Spot Instances can offer significant savings for interruption-tolerant workloads. Applications should checkpoint and handle interruptions.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-057",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2 Spot Instances."
+      },
+      {
+        "key": "B",
+        "text": "Dedicated Hosts only."
+      },
+      {
+        "key": "C",
+        "text": "A permanently running On-Demand instance."
+      },
+      {
+        "key": "D",
+        "text": "Provisioned IOPS for an unused volume."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Spot Instances can offer significant savings for interruption-tolerant workloads. Applications should checkpoint and handle interruptions.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-058",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2 Spot Instances."
+      },
+      {
+        "key": "B",
+        "text": "Dedicated Hosts only."
+      },
+      {
+        "key": "C",
+        "text": "A permanently running On-Demand instance."
+      },
+      {
+        "key": "D",
+        "text": "Provisioned IOPS for an unused volume."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Spot Instances can offer significant savings for interruption-tolerant workloads. Applications should checkpoint and handle interruptions.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-059",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2 Spot Instances."
+      },
+      {
+        "key": "B",
+        "text": "Dedicated Hosts only."
+      },
+      {
+        "key": "C",
+        "text": "A permanently running On-Demand instance."
+      },
+      {
+        "key": "D",
+        "text": "Provisioned IOPS for an unused volume."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Spot Instances can offer significant savings for interruption-tolerant workloads. Applications should checkpoint and handle interruptions.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  },
+  {
+    "certification": "solutions-architect-associate",
+    "external_id": "SAA-060",
+    "domain": "Cost-Optimized Architectures",
+    "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
+    "question_type": "single_answer",
+    "difficulty": "hard",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2 Spot Instances."
+      },
+      {
+        "key": "B",
+        "text": "Dedicated Hosts only."
+      },
+      {
+        "key": "C",
+        "text": "A permanently running On-Demand instance."
+      },
+      {
+        "key": "D",
+        "text": "Provisioned IOPS for an unused volume."
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Spot Instances can offer significant savings for interruption-tolerant workloads. Applications should checkpoint and handle interruptions.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "active": true,
+    "version": 1
+  }
+]
