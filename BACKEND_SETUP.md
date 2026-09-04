@@ -82,6 +82,16 @@ Enable Email auth. For Google, enable the Google provider in Supabase, add its S
 
 Supabase's publishable/anon key identifies the public browser client. It is unrelated to Google OAuth credentials and cannot administer the project. Configure production SMTP in Supabase when the default email sender is insufficient for expected student volume.
 
+## Production email delivery
+
+The application can confirm that Supabase accepted a signup or resend request; it cannot prove an email reached an inbox. The default Supabase email service is intended for testing and is rate-limited (commonly two Auth emails per hour per project), so it is not sufficient for a public student platform. Configure **Custom SMTP** in Supabase Authentication for production.
+
+Use any standards-compliant provider, such as Resend, Brevo, Postmark, Amazon SES, SendGrid, or another provider your administrators select. In Supabase, configure the SMTP host, port, username, password, sender email, and sender name. Keep all SMTP credentials exclusively in the Supabase dashboard/provider—not in Git, Netlify browser variables, or client JavaScript.
+
+For delivery troubleshooting, inspect **Supabase Dashboard → Authentication → Logs** and the selected SMTP provider’s delivery/suppression logs. Check whether Supabase accepted the request, an Auth rate limit was hit, SMTP failed, the provider accepted the handoff, or the message was filtered as spam. Confirm the sender domain’s SPF/DKIM/DMARC setup with the chosen provider.
+
+Keep the default email template’s `{{ .ConfirmationURL }}` as the confirmation link. The production Site URL and Redirect URL allowlist determine the final destination; `{{ .RedirectTo }}` is appropriate only when constructing an application-specific link deliberately. Security scanners sometimes prefetch confirmation links and can consume an OTP before a student clicks it; the in-app expired-link screen provides a supported resend flow in that case.
+
 ## Security model
 
 - `question_answers` has no public SELECT policy.

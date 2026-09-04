@@ -1,4 +1,4 @@
 /* Builds an allow-listed Netlify publish directory so answer-key seed data never ships to browsers. */
 const fs = require('fs'); const path = require('path'); const root = process.cwd(); const output = path.join(root, 'site');
-const files = ['index.html','styles.css','app.js','googlec934af6c9b43c60f.html','certification-practice.html','certification-practice.css','certification-overrides.css','certification-auth.css','supabase-public-config.js','certification-services.js','certification-cloud-flow.js'];
+const files = ['index.html','styles.css','app.js','googlec934af6c9b43c60f.html','certification-practice.html','certification-practice.css','certification-overrides.css','certification-auth.css','certification-mobile.css','supabase-public-config.js','certification-services.js','certification-cloud-flow.js'];
 fs.rmSync(output,{recursive:true,force:true}); fs.mkdirSync(output,{recursive:true}); for(const file of files)fs.copyFileSync(path.join(root,file),path.join(output,file)); fs.cpSync(path.join(root,'assets'),path.join(output,'assets'),{recursive:true}); console.log(`Built ${files.length} public files and assets into ${path.relative(root,output)}.`);

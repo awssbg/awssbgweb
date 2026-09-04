@@ -4,6 +4,7 @@
   const getAppOrigin = () => location.protocol === 'file:' ? 'http://localhost:8888' : location.origin;
   const getAuthRedirectUrl = (path = '/certification-practice/auth/callback') => new URL(path, getAppOrigin()).toString();
   let client = null;
+  let runtimeConfig = null;
   try {
     let config = window.SBG_SUPABASE_CONFIG;
     if (!config && location.protocol !== 'file:') {
@@ -12,11 +13,12 @@
     }
     config ||= unavailable('Backend configuration is unavailable.');
     if (!config.url || !config.anonKey) throw new Error('The cloud practice backend has not been configured yet.');
+    runtimeConfig = Object.freeze({ url: config.url, anonKey: config.anonKey });
     const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2');
-    client = createClient(config.url, config.anonKey, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
+    client = createClient(runtimeConfig.url, runtimeConfig.anonKey, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
   } catch (error) { window.sbgBackend = unavailable(error.message); window.dispatchEvent(new Event('sbg-backend-ready')); return; }
   const unwrap = async request => { const { data, error } = await request; if (error) throw error; return data; };
-  const friendlyError = error => { const message=String(error?.message||error||'Unable to complete this request.'); if(/provider is not enabled|unsupported provider/i.test(message))return 'Google sign-in is not configured. Please use email sign-in or contact the administrator.'; if(/email not confirmed/i.test(message))return 'Please verify your email address, then sign in.'; if(/invalid login/i.test(message))return 'Email or password is incorrect.'; if(/already registered/i.test(message))return 'An account already exists for this email. Try signing in instead.'; if(/password/i.test(message))return 'Choose a password that meets the required security rules.'; if(/network|fetch/i.test(message))return 'Network connection failed. Please try again.'; return message; };
+  const friendlyError = error => { const message=String(error?.message||error||'Unable to complete this request.'); const status=Number(error?.status||0); if(status===429||/rate limit|too many requests/i.test(message))return 'TOO MANY REQUESTS — Please wait before requesting another email.'; if(/provider is not enabled|unsupported provider/i.test(message))return 'Google sign-in is not configured. Please use email sign-in or contact the administrator.'; if(/email not confirmed/i.test(message))return 'Please verify your email address, then sign in.'; if(/invalid login/i.test(message))return 'Email or password is incorrect.'; if(/already registered/i.test(message))return 'An account already exists for this email. Try signing in instead.'; if(/password/i.test(message))return 'Choose a password that meets the required security rules.'; if(/network|fetch/i.test(message))return 'Network connection failed. Please try again.'; return message; };
   const mustUser = async () => { const { data: { user } } = await client.auth.getUser(); if (!user) throw new Error('Please sign in to save cloud practice progress.'); return user; };
   window.sbgBackend = {
     available: true, client,
@@ -27,7 +29,7 @@
       signOut: () => unwrap(client.auth.signOut()),
       resetPassword: (email, redirectTo = getAuthRedirectUrl()) => unwrap(client.auth.resetPasswordForEmail(email, { redirectTo })),
       resendVerification: (email, redirectTo = getAuthRedirectUrl()) => unwrap(client.auth.resend({ type: 'signup', email, options: { emailRedirectTo: redirectTo } })),
-      async signInWithGoogle(redirectTo) { const settings=await fetch(`${config.url}/auth/v1/settings`,{headers:{apikey:config.anonKey}}).then(response=>response.ok?response.json():null); if(!settings?.external?.google)throw new Error('Google sign-in is not configured. Please use email sign-in or contact the administrator.'); return unwrap(client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })); },
+      async signInWithGoogle(redirectTo = getAuthRedirectUrl()) { if(!runtimeConfig)throw new Error('Google sign-in failed. Please try again.'); let settings; try { settings=await fetch(`${runtimeConfig.url}/auth/v1/settings`,{headers:{apikey:runtimeConfig.anonKey}}).then(response=>response.ok?response.json():null); } catch { throw new Error('Google sign-in failed. Please try again.'); } if(!settings?.external?.google)throw new Error('Google sign-in is not configured. Please use email sign-in or contact the administrator.'); return unwrap(client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })); },
       onAuthStateChange: callback => client.auth.onAuthStateChange(callback), friendlyError, getAppOrigin, getAuthRedirectUrl
     },
     certifications: {
