@@ -9,6 +9,11 @@
   status = 200
 
 [[redirects]]
+  from = "/auth/callback"
+  to = "/certification-practice.html"
+  status = 200
+
+[[redirects]]
   from = "/certification-practice/assets/*"
   to = "/assets/:splat"
   status = 200

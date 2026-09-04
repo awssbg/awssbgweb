@@ -1,6 +1,8 @@
 /* Global service layer: all personal/exam authority remains in Supabase. */
 (async () => {
   const unavailable = message => ({ available: false, reason: message });
+  const getAppOrigin = () => location.protocol === 'file:' ? 'http://localhost:8888' : location.origin;
+  const getAuthRedirectUrl = (path = '/certification-practice/auth/callback') => new URL(path, getAppOrigin()).toString();
   let client = null;
   try {
     let config = window.SBG_SUPABASE_CONFIG;
@@ -20,12 +22,13 @@
     available: true, client,
     auth: {
       getSession: () => unwrap(client.auth.getSession()), getCurrentUser: mustUser,
-      signUp: ({ email, password, displayName, redirectTo }) => unwrap(client.auth.signUp({ email, password, options: { data: { display_name: displayName }, emailRedirectTo: redirectTo } })),
+      signUp: ({ email, password, displayName, redirectTo = getAuthRedirectUrl() }) => unwrap(client.auth.signUp({ email, password, options: { data: { display_name: displayName }, emailRedirectTo: redirectTo } })),
       signIn: ({ email, password }) => unwrap(client.auth.signInWithPassword({ email, password })),
       signOut: () => unwrap(client.auth.signOut()),
-      resetPassword: (email, redirectTo) => unwrap(client.auth.resetPasswordForEmail(email, { redirectTo })),
+      resetPassword: (email, redirectTo = getAuthRedirectUrl()) => unwrap(client.auth.resetPasswordForEmail(email, { redirectTo })),
+      resendVerification: (email, redirectTo = getAuthRedirectUrl()) => unwrap(client.auth.resend({ type: 'signup', email, options: { emailRedirectTo: redirectTo } })),
       async signInWithGoogle(redirectTo) { const settings=await fetch(`${config.url}/auth/v1/settings`,{headers:{apikey:config.anonKey}}).then(response=>response.ok?response.json():null); if(!settings?.external?.google)throw new Error('Google sign-in is not configured. Please use email sign-in or contact the administrator.'); return unwrap(client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })); },
-      onAuthStateChange: callback => client.auth.onAuthStateChange(callback), friendlyError
+      onAuthStateChange: callback => client.auth.onAuthStateChange(callback), friendlyError, getAppOrigin, getAuthRedirectUrl
     },
     certifications: {
       list: () => unwrap(client.from('certification_catalog').select('*').eq('active', true).order('level').order('name')),

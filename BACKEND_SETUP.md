@@ -62,8 +62,13 @@ In Supabase Auth URL Configuration, set the Site URL to `https://awssbg.iedclbsc
 
 ```
 https://awssbg.iedclbscek.in/certification-practice
+https://awssbg.iedclbscek.in/certification-practice/auth/callback
+https://awssbg.iedclbscek.in/auth/callback
 http://localhost:8888/certification-practice
+http://localhost:8888/certification-practice/auth/callback
 ```
+
+For confirmation and password-reset emails, Supabase **Authentication → Email Templates** should use `{{ .RedirectTo }}` for the requested destination when a `redirectTo` URL is supplied. `{{ .SiteURL }}` is only the default site URL; a production Site URL left as localhost causes the exact localhost redirect failure described in the audit. Expired confirmation URLs are handled in the page with a real `auth.resend({ type: 'signup' })` flow; the user must still configure Site URL/Redirect URLs in Supabase.
 
 Enable Email auth. For Google, enable the Google provider in Supabase, add its Supabase callback URL to Google Cloud OAuth credentials, then save the Google Client ID and Client Secret **only in Supabase**, not in this repository.
 
