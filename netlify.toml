@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "/certification-practice"
+  to = "/certification-practice.html"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/styles.css"
+  to = "/styles.css"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/certification-practice.css"
+  to = "/certification-practice.css"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/certification-overrides.css"
+  to = "/certification-overrides.css"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/certification-data.js"
+  to = "/certification-data.js"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/certification-practice.js"
+  to = "/certification-practice.js"
+  status = 200
+
+[[redirects]]
+  from = "/certification-practice/*"
+  to = "/certification-practice.html"
+  status = 200

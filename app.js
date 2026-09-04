@@ -1,7 +1,8 @@
 // CONTENT DATA — replace every [PLACEHOLDER] value with verified community information.
+const practicePath = location.protocol === 'file:' ? 'certification-practice.html' : '/certification-practice';
 const navigation = [
   { label: 'Home', href: '#home' }, { label: 'About', href: '#about' }, { label: 'Events', href: '#events' },
-  { label: 'Team', href: '#team' }, { label: 'Contact', href: '#contact' }
+  { label: 'Team', href: '#team' }, { label: 'Practice', href: practicePath }, { label: 'Contact', href: '#contact' }
 ];
 const stats = [
   { value: '500+', label: 'Community members' }, { value: '8+', label: 'Events conducted' }, { value: '2', label: 'Hands-on workshops' }
