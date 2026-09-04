@@ -46,7 +46,15 @@
       async active() { await mustUser(); return unwrap(client.from('exam_attempts').select('id, certification_id, certifications(slug,short_name)').eq('status', 'in_progress').gt('expires_at', new Date().toISOString()).order('started_at', { ascending: false }).limit(1)); },
       async result(attemptId) { await mustUser(); return unwrap(client.rpc('get_exam_review', { p_attempt_id: attemptId })); }
     },
-    profile: { async get() { const user=await mustUser(); return unwrap(client.from('profiles').select('display_name,avatar_url,created_at').eq('id',user.id).single()); } },
+    profile: {
+      async get() { const user=await mustUser(); return unwrap(client.from('profiles').select('display_name,avatar_url,created_at').eq('id',user.id).single()); },
+      async updateDisplayName(displayName) {
+        const user=await mustUser();
+        const value=String(displayName||'').trim().replace(/\s+/g,' ');
+        if(!value || value.length>80) throw new Error('Display name must be between 1 and 80 characters.');
+        return unwrap(client.from('profiles').update({ display_name:value }).eq('id',user.id).select('display_name,avatar_url,created_at').single());
+      }
+    },
     progress: { dashboard: async () => { await mustUser(); return unwrap(client.rpc('my_dashboard')); } },
     saved: {
       async toggle(questionId, enabled) { const user = await mustUser(); return enabled ? unwrap(client.from('saved_questions').upsert({ user_id: user.id, question_id: questionId })) : unwrap(client.from('saved_questions').delete().eq('user_id', user.id).eq('question_id', questionId)); },

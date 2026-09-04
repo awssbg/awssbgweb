@@ -1,0 +1,20 @@
+{
+  "certification": "solutions-architect-associate",
+  "exam_code": "SAA-C03",
+  "status": "editorial-plan-only",
+  "production_changes": "none",
+  "groups": [
+    {"group":"SAA-DUP-01","keep":"SAA-001","retire":["SAA-002","SAA-003","SAA-004","SAA-005"],"replacement_ids":["SAA-061","SAA-062","SAA-063","SAA-064"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-02","keep":"SAA-006","retire":["SAA-007","SAA-008","SAA-009","SAA-010"],"replacement_ids":["SAA-065","SAA-066","SAA-067","SAA-068"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-03","keep":"SAA-011","retire":["SAA-012","SAA-013","SAA-014","SAA-015"],"replacement_ids":["SAA-069","SAA-070","SAA-071","SAA-072"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-04","keep":"SAA-016","retire":["SAA-017","SAA-018","SAA-019","SAA-020"],"replacement_ids":["SAA-073","SAA-074","SAA-075","SAA-076"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-05","keep":"SAA-021","retire":["SAA-022","SAA-023","SAA-024","SAA-025"],"replacement_ids":["SAA-077","SAA-078","SAA-079","SAA-080"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-06","keep":"SAA-026","retire":["SAA-027","SAA-028","SAA-029","SAA-030"],"replacement_ids":["SAA-081","SAA-082","SAA-083","SAA-084"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-07","keep":"SAA-031","retire":["SAA-032","SAA-033","SAA-034","SAA-035"],"replacement_ids":["SAA-085","SAA-086","SAA-087","SAA-088"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-08","keep":"SAA-036","retire":["SAA-037","SAA-038","SAA-039","SAA-040"],"replacement_ids":["SAA-089","SAA-090","SAA-091","SAA-092"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-09","keep":"SAA-041","retire":["SAA-042","SAA-043","SAA-044","SAA-045"],"replacement_ids":["SAA-093","SAA-094","SAA-095","SAA-096"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-10","keep":"SAA-046","retire":["SAA-047","SAA-048","SAA-049","SAA-050"],"replacement_ids":["SAA-097","SAA-098","SAA-099","SAA-100"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-11","keep":"SAA-051","retire":["SAA-052","SAA-053","SAA-054","SAA-055"],"replacement_ids":["SAA-101","SAA-102","SAA-103","SAA-104"],"decision":"RETIRE + REPLACE"},
+    {"group":"SAA-DUP-12","keep":"SAA-056","retire":["SAA-057","SAA-058","SAA-059","SAA-060"],"replacement_ids":["SAA-105","SAA-106","SAA-107","SAA-108"],"decision":"RETIRE + REPLACE"}
+  ]
+}

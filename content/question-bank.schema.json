@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AWS SBG question-bank record",
+  "type": "object",
+  "required": ["certification", "exam_code", "external_id", "domain", "difficulty", "question_type", "question_text", "options", "correct_option_keys", "explanation", "reference_links", "publication_status"],
+  "properties": {
+    "certification": { "type": "string", "minLength": 1 },
+    "exam_code": { "type": "string", "pattern": "^[A-Z]{2,4}-C[0-9]{2}$" },
+    "external_id": { "type": "string", "minLength": 3 },
+    "domain": { "type": "string", "minLength": 1 },
+    "difficulty": { "enum": ["easy", "medium", "hard"] },
+    "question_type": { "enum": ["single_answer", "multiple_response"] },
+    "question_text": { "type": "string", "minLength": 20 },
+    "options": { "type": "array", "minItems": 4, "items": { "type": "object", "required": ["key", "text"], "properties": { "key": { "type": "string", "pattern": "^[A-Z]$" }, "text": { "type": "string", "minLength": 2 } } } },
+    "correct_option_keys": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[A-Z]$" } },
+    "explanation": { "type": "string", "minLength": 40 },
+    "reference_links": { "type": "array", "items": { "type": "object", "required": ["title", "url"], "properties": { "title": { "type": "string" }, "url": { "type": "string", "format": "uri" } } } },
+    "publication_status": { "enum": ["draft", "review", "published", "retired"] }
+  }
+}

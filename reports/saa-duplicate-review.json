@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-09-04T15:22:47.284Z",
+  "source": "supabase/existing-questions.seed.json",
+  "groups": [
+    {
+      "review_id": "SAA-DUP-01",
+      "question_ids": [
+        "SAA-002",
+        "SAA-003",
+        "SAA-004",
+        "SAA-005"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-002",
+          "domain": "Secure Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-003",
+          "domain": "Secure Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-004",
+          "domain": "Secure Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-005",
+          "domain": "Secure Architectures",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-02",
+      "question_ids": [
+        "SAA-006",
+        "SAA-007",
+        "SAA-008",
+        "SAA-009",
+        "SAA-010"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-006",
+          "domain": "Secure Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-007",
+          "domain": "Secure Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-008",
+          "domain": "Secure Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-009",
+          "domain": "Secure Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-010",
+          "domain": "Secure Architectures",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-03",
+      "question_ids": [
+        "SAA-011",
+        "SAA-012",
+        "SAA-013",
+        "SAA-014",
+        "SAA-015"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-011",
+          "domain": "Resilient Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-012",
+          "domain": "Resilient Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-013",
+          "domain": "Resilient Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-014",
+          "domain": "Resilient Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-015",
+          "domain": "Resilient Architectures",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-04",
+      "question_ids": [
+        "SAA-016",
+        "SAA-017",
+        "SAA-018",
+        "SAA-019",
+        "SAA-020"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-016",
+          "domain": "Resilient Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-017",
+          "domain": "Resilient Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-018",
+          "domain": "Resilient Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-019",
+          "domain": "Resilient Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-020",
+          "domain": "Resilient Architectures",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-05",
+      "question_ids": [
+        "SAA-021",
+        "SAA-022",
+        "SAA-023",
+        "SAA-024",
+        "SAA-025"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-021",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-022",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-023",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-024",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-025",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-06",
+      "question_ids": [
+        "SAA-026",
+        "SAA-027",
+        "SAA-028",
+        "SAA-029",
+        "SAA-030"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-026",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-027",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-028",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-029",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-030",
+          "domain": "High-Performing Architectures",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-07",
+      "question_ids": [
+        "SAA-031",
+        "SAA-032",
+        "SAA-033",
+        "SAA-034",
+        "SAA-035"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-031",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-032",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-033",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-034",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-035",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-08",
+      "question_ids": [
+        "SAA-037",
+        "SAA-038",
+        "SAA-039",
+        "SAA-040"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-037",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-038",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-039",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "medium"
+        },
+        {
+          "id": "SAA-040",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-09",
+      "question_ids": [
+        "SAA-042",
+        "SAA-043",
+        "SAA-044",
+        "SAA-045"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-042",
+          "domain": "Secure Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-043",
+          "domain": "Secure Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-044",
+          "domain": "Secure Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-045",
+          "domain": "Secure Architectures",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-10",
+      "question_ids": [
+        "SAA-046",
+        "SAA-047",
+        "SAA-048",
+        "SAA-049",
+        "SAA-050"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-046",
+          "domain": "Resilient Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-047",
+          "domain": "Resilient Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-048",
+          "domain": "Resilient Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-049",
+          "domain": "Resilient Architectures",
+          "difficulty": "easy"
+        },
+        {
+          "id": "SAA-050",
+          "domain": "Resilient Architectures",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-11",
+      "question_ids": [
+        "SAA-051",
+        "SAA-052",
+        "SAA-053",
+        "SAA-054",
+        "SAA-055"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-051",
+          "domain": "High-Performing Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-052",
+          "domain": "High-Performing Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-053",
+          "domain": "High-Performing Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-054",
+          "domain": "High-Performing Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-055",
+          "domain": "High-Performing Architectures",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "review_id": "SAA-DUP-12",
+      "question_ids": [
+        "SAA-056",
+        "SAA-057",
+        "SAA-058",
+        "SAA-059",
+        "SAA-060"
+      ],
+      "similarity": 1,
+      "reason": "Normalized question text is identical; the matching option set is also reported.",
+      "recommended_action": "REVIEW — retain one canonical record only as a reference; create and review original replacement questions with new external IDs before retiring duplicate records.",
+      "records": [
+        {
+          "id": "SAA-056",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-057",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-058",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-059",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "hard"
+        },
+        {
+          "id": "SAA-060",
+          "domain": "Cost-Optimized Architectures",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ],
+  "automatic_changes": "none"
+}

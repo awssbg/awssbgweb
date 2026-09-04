@@ -17,4 +17,7 @@ for (const required of ['certification_exam_versions', 'publication_status', 'ex
 const statusFix = fs.readFileSync('supabase/migrations/004_fix_exam_attempt_status_enum.sql', 'utf8');
 for (const required of ["'in_progress'::public.attempt_status", "'submitted'::public.attempt_status", "'expired'::public.attempt_status", 'function public.submit_exam', 'for update']) assert(statusFix.includes(required), `missing enum-safe submission contract: ${required}`);
 assert(!/set\s+status\s*=\s*case[\s\S]*then\s+'expired'(?!::public\.attempt_status)[\s\S]*else\s+'submitted'(?!::public\.attempt_status)/i.test(statusFix), 'submission status CASE must use attempt_status values');
+const selection = fs.readFileSync('supabase/migrations/005_question_selection_and_versioning.sql', 'utf8');
+for (const required of ['exam_version_id', 'domain_weight_snapshot', 'recency_rank <= 40', 'publication_status = \'published\'', 'function public.create_exam']) assert(selection.includes(required), `missing version-aware repeat-avoidance contract: ${required}`);
+assert(!/grant execute on function public\.create_exam[^;]+to anon/i.test(selection), 'exam creation must remain authenticated-only');
 console.log('Backend contract checks passed.');

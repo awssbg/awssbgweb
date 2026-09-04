@@ -10,10 +10,34 @@
     "official_question_count": 85,
     "official_duration_minutes": 170,
     "domains": [
-      "AI Fundamentals and Literacy",
-      "AI Strategy and Business Value Creation",
-      "AI Governance and Responsible AI Leadership",
-      "Business Readiness, Leadership, and AI Transformation"
+      {
+        "name": "AI Fundamentals and Literacy",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "AI Strategy and Business Value Creation",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "AI Governance and Responsible AI Leadership",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Business Readiness, Leadership, and AI Transformation",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "AIB-C01",
+        "version_name": "AIB-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/"
+      }
     ]
   },
   {
@@ -27,10 +51,34 @@
     "official_question_count": 65,
     "official_duration_minutes": 90,
     "domains": [
-      "Cloud concepts",
-      "Security and compliance",
-      "Cloud technology and services",
-      "Billing and pricing"
+      {
+        "name": "Cloud concepts",
+        "weight": 0.24,
+        "display_order": 1
+      },
+      {
+        "name": "Security and compliance",
+        "weight": 0.3,
+        "display_order": 2
+      },
+      {
+        "name": "Cloud technology and services",
+        "weight": 0.34,
+        "display_order": 3
+      },
+      {
+        "name": "Billing and pricing",
+        "weight": 0.12,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "CLF-C02",
+        "version_name": "CLF-C02",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+      }
     ]
   },
   {
@@ -44,10 +92,39 @@
     "official_question_count": 65,
     "official_duration_minutes": 90,
     "domains": [
-      "AI and ML fundamentals",
-      "Generative AI fundamentals",
-      "Foundation models",
-      "Responsible AI"
+      {
+        "name": "AI and ML fundamentals",
+        "weight": 0.2,
+        "display_order": 1
+      },
+      {
+        "name": "Generative AI fundamentals",
+        "weight": 0.24,
+        "display_order": 2
+      },
+      {
+        "name": "Foundation model applications",
+        "weight": 0.28,
+        "display_order": 3
+      },
+      {
+        "name": "Responsible AI",
+        "weight": 0.14,
+        "display_order": 4
+      },
+      {
+        "name": "Security, compliance, and governance",
+        "weight": 0.14,
+        "display_order": 5
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "AIF-C01",
+        "version_name": "AIF-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+      }
     ]
   },
   {
@@ -61,10 +138,34 @@
     "official_question_count": 65,
     "official_duration_minutes": 130,
     "domains": [
-      "Secure Architectures",
-      "Resilient Architectures",
-      "High-Performing Architectures",
-      "Cost-Optimized Architectures"
+      {
+        "name": "Secure Architectures",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Resilient Architectures",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "High-Performing Architectures",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Cost-Optimized Architectures",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "SAA-C03",
+        "version_name": "SAA-C03",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+      }
     ]
   },
   {
@@ -78,15 +179,39 @@
     "official_question_count": 65,
     "official_duration_minutes": 130,
     "domains": [
-      "Development with AWS services",
-      "Security",
-      "Deployment",
-      "Troubleshooting"
+      {
+        "name": "Development with AWS services",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Security",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Deployment",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Troubleshooting",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "DVA-C02",
+        "version_name": "DVA-C02",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-developer-associate/"
+      }
     ]
   },
   {
     "slug": "cloudops-associate",
-    "code": "SOA-C02",
+    "code": "SOA-C03",
     "name": "AWS Certified CloudOps Engineer – Associate",
     "short_name": "CloudOps Engineer – Associate",
     "level": "Associate",
@@ -95,11 +220,39 @@
     "official_question_count": 65,
     "official_duration_minutes": 130,
     "domains": [
-      "Monitoring",
-      "Reliability",
-      "Security",
-      "Networking",
-      "Cost optimization"
+      {
+        "name": "Monitoring",
+        "weight": 0.2,
+        "display_order": 1
+      },
+      {
+        "name": "Reliability",
+        "weight": 0.2,
+        "display_order": 2
+      },
+      {
+        "name": "Security",
+        "weight": 0.2,
+        "display_order": 3
+      },
+      {
+        "name": "Networking",
+        "weight": 0.2,
+        "display_order": 4
+      },
+      {
+        "name": "Cost optimization",
+        "weight": 0.2,
+        "display_order": 5
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "SOA-C03",
+        "version_name": "SOA-C03",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/"
+      }
     ]
   },
   {
@@ -113,10 +266,34 @@
     "official_question_count": 65,
     "official_duration_minutes": 130,
     "domains": [
-      "Data ingestion",
-      "Data transformation",
-      "Data operations",
-      "Data security and governance"
+      {
+        "name": "Data ingestion",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Data transformation",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Data operations",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Data security and governance",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "DEA-C01",
+        "version_name": "DEA-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/"
+      }
     ]
   },
   {
@@ -130,10 +307,41 @@
     "official_question_count": 65,
     "official_duration_minutes": 130,
     "domains": [
-      "Data preparation",
-      "Model development",
-      "Deployment",
-      "Monitoring"
+      {
+        "name": "Data preparation",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Model development",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Deployment",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Monitoring",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "MLA-C01",
+        "version_name": "MLA-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/"
+      },
+      {
+        "exam_code": "MLA-C02",
+        "version_name": "MLA-C02 beta",
+        "status": "beta",
+        "effective_from": "2026-09-29",
+        "official_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/"
+      }
     ]
   },
   {
@@ -147,10 +355,34 @@
     "official_question_count": 75,
     "official_duration_minutes": 180,
     "domains": [
-      "Organizational complexity",
-      "New solutions",
-      "Continuous improvement",
-      "Migration"
+      {
+        "name": "Organizational complexity",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "New solutions",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Continuous improvement",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Migration",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "SAP-C02",
+        "version_name": "SAP-C02",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+      }
     ]
   },
   {
@@ -164,15 +396,39 @@
     "official_question_count": 75,
     "official_duration_minutes": 180,
     "domains": [
-      "SDLC automation",
-      "Configuration management",
-      "Resilient cloud solutions",
-      "Monitoring and logging"
+      {
+        "name": "SDLC automation",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Configuration management",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Resilient cloud solutions",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Monitoring and logging",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "DOP-C02",
+        "version_name": "DOP-C02",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+      }
     ]
   },
   {
     "slug": "generative-ai-developer-professional",
-    "code": "AIG-C01",
+    "code": "AIP-C01",
     "name": "AWS Certified Generative AI Developer – Professional",
     "short_name": "Generative AI Developer – Professional",
     "level": "Professional",
@@ -181,10 +437,34 @@
     "official_question_count": null,
     "official_duration_minutes": null,
     "domains": [
-      "Generative AI applications",
-      "Foundation models",
-      "Security",
-      "Operations"
+      {
+        "name": "Generative AI applications",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Foundation models",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Security",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Operations",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "AIP-C01",
+        "version_name": "AIP-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/"
+      }
     ]
   },
   {
@@ -198,15 +478,39 @@
     "official_question_count": 65,
     "official_duration_minutes": 170,
     "domains": [
-      "Network design",
-      "Network implementation",
-      "Network management",
-      "Security"
+      {
+        "name": "Network design",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Network implementation",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Network management",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Security",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "ANS-C01",
+        "version_name": "ANS-C01",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+      }
     ]
   },
   {
     "slug": "security-specialty",
-    "code": "SCS-C02",
+    "code": "SCS-C03",
     "name": "AWS Certified Security – Specialty",
     "short_name": "Security – Specialty",
     "level": "Specialty",
@@ -215,10 +519,34 @@
     "official_question_count": 65,
     "official_duration_minutes": 170,
     "domains": [
-      "Threat detection",
-      "Security logging",
-      "Infrastructure security",
-      "Data protection"
+      {
+        "name": "Threat detection",
+        "weight": 0.25,
+        "display_order": 1
+      },
+      {
+        "name": "Security logging",
+        "weight": 0.25,
+        "display_order": 2
+      },
+      {
+        "name": "Infrastructure security",
+        "weight": 0.25,
+        "display_order": 3
+      },
+      {
+        "name": "Data protection",
+        "weight": 0.25,
+        "display_order": 4
+      }
+    ],
+    "exam_versions": [
+      {
+        "exam_code": "SCS-C03",
+        "version_name": "SCS-C03",
+        "status": "current",
+        "official_url": "https://aws.amazon.com/certification/certified-security-specialty/"
+      }
     ]
   }
 ]

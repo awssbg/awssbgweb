@@ -1,6 +1,7 @@
 [
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-001",
     "domain": "Secure Architectures",
     "question_text": "A company needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
@@ -35,10 +36,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-002",
     "domain": "Secure Architectures",
     "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
@@ -73,10 +76,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-003",
     "domain": "Secure Architectures",
     "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
@@ -111,10 +116,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-004",
     "domain": "Secure Architectures",
     "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
@@ -149,10 +156,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-005",
     "domain": "Secure Architectures",
     "question_text": "An organization needs to give an application running on Amazon EC2 read-only access to one S3 bucket. Which approach is the most secure?",
@@ -187,10 +196,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-006",
     "domain": "Secure Architectures",
     "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
@@ -225,10 +236,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-007",
     "domain": "Secure Architectures",
     "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
@@ -263,10 +276,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-008",
     "domain": "Secure Architectures",
     "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
@@ -301,10 +316,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-009",
     "domain": "Secure Architectures",
     "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
@@ -339,10 +356,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-010",
     "domain": "Secure Architectures",
     "question_text": "A security team needs to detect if an S3 bucket becomes publicly accessible. Which AWS service provides this managed check?",
@@ -377,10 +396,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-011",
     "domain": "Resilient Architectures",
     "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
@@ -415,10 +436,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-012",
     "domain": "Resilient Architectures",
     "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
@@ -453,10 +476,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-013",
     "domain": "Resilient Architectures",
     "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
@@ -491,10 +516,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-014",
     "domain": "Resilient Architectures",
     "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
@@ -529,10 +556,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-015",
     "domain": "Resilient Architectures",
     "question_text": "A web application must remain available if one Availability Zone fails. Which design best meets this requirement?",
@@ -567,10 +596,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-016",
     "domain": "Resilient Architectures",
     "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
@@ -605,10 +636,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-017",
     "domain": "Resilient Architectures",
     "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
@@ -643,10 +676,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-018",
     "domain": "Resilient Architectures",
     "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
@@ -681,10 +716,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-019",
     "domain": "Resilient Architectures",
     "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
@@ -719,10 +756,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-020",
     "domain": "Resilient Architectures",
     "question_text": "An application writes orders to a database and must continue accepting requests during a regional service disruption. Which pattern is most appropriate?",
@@ -757,10 +796,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-021",
     "domain": "High-Performing Architectures",
     "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
@@ -795,10 +836,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-022",
     "domain": "High-Performing Architectures",
     "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
@@ -833,10 +876,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-023",
     "domain": "High-Performing Architectures",
     "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
@@ -871,10 +916,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-024",
     "domain": "High-Performing Architectures",
     "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
@@ -909,10 +956,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-025",
     "domain": "High-Performing Architectures",
     "question_text": "Users upload large files directly to a web application. The application servers are becoming a bottleneck. What should the architect recommend?",
@@ -947,10 +996,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-026",
     "domain": "High-Performing Architectures",
     "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
@@ -985,10 +1036,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-027",
     "domain": "High-Performing Architectures",
     "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
@@ -1023,10 +1076,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-028",
     "domain": "High-Performing Architectures",
     "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
@@ -1061,10 +1116,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-029",
     "domain": "High-Performing Architectures",
     "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
@@ -1099,10 +1156,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-030",
     "domain": "High-Performing Architectures",
     "question_text": "A globally distributed audience experiences high latency when loading static assets from an S3 bucket. Which solution improves delivery performance?",
@@ -1137,10 +1196,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-031",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
@@ -1175,10 +1236,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-032",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
@@ -1213,10 +1276,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-033",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
@@ -1251,10 +1316,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-034",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
@@ -1289,10 +1356,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-035",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A development environment is used only during business hours and has predictable usage. Which option most directly reduces compute cost?",
@@ -1327,10 +1396,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-036",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A company retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
@@ -1365,10 +1436,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-037",
     "domain": "Cost-Optimized Architectures",
     "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
@@ -1403,10 +1476,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-038",
     "domain": "Cost-Optimized Architectures",
     "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
@@ -1441,10 +1516,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-039",
     "domain": "Cost-Optimized Architectures",
     "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
@@ -1479,10 +1556,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-040",
     "domain": "Cost-Optimized Architectures",
     "question_text": "An organization retains data for several years. Data is accessed frequently for 30 days and rarely afterward, but must be retrievable when required. Which S3 approach is appropriate?",
@@ -1517,10 +1596,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-041",
     "domain": "Secure Architectures",
     "question_text": "A company must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
@@ -1555,10 +1636,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-042",
     "domain": "Secure Architectures",
     "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
@@ -1593,10 +1676,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-043",
     "domain": "Secure Architectures",
     "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
@@ -1631,10 +1716,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-044",
     "domain": "Secure Architectures",
     "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
@@ -1669,10 +1756,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-045",
     "domain": "Secure Architectures",
     "question_text": "An organization must encrypt data in S3 and control key usage through its own key policy. Which option is appropriate?",
@@ -1707,10 +1796,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-046",
     "domain": "Resilient Architectures",
     "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
@@ -1745,10 +1836,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-047",
     "domain": "Resilient Architectures",
     "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
@@ -1783,10 +1876,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-048",
     "domain": "Resilient Architectures",
     "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
@@ -1821,10 +1916,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-049",
     "domain": "Resilient Architectures",
     "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
@@ -1859,10 +1956,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-050",
     "domain": "Resilient Architectures",
     "question_text": "A workload uses an Amazon RDS database and requires automatic failover within a Region. Which configuration should be selected?",
@@ -1897,10 +1996,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-051",
     "domain": "High-Performing Architectures",
     "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
@@ -1935,10 +2036,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-052",
     "domain": "High-Performing Architectures",
     "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
@@ -1973,10 +2076,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-053",
     "domain": "High-Performing Architectures",
     "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
@@ -2011,10 +2116,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-054",
     "domain": "High-Performing Architectures",
     "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
@@ -2049,10 +2156,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-055",
     "domain": "High-Performing Architectures",
     "question_text": "An API receives unpredictable traffic bursts and tasks can be processed asynchronously. Which architecture scales efficiently?",
@@ -2087,10 +2196,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-056",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
@@ -2125,10 +2236,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-057",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
@@ -2163,10 +2276,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-058",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
@@ -2201,10 +2316,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-059",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
@@ -2239,10 +2356,12 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   },
   {
     "certification": "solutions-architect-associate",
+    "exam_code": "SAA-C03",
     "external_id": "SAA-060",
     "domain": "Cost-Optimized Architectures",
     "question_text": "A batch workload is fault tolerant and can pause when capacity is unavailable. Which purchasing option is generally suited to this workload?",
@@ -2277,6 +2396,7 @@
       }
     ],
     "active": true,
+    "publication_status": "published",
     "version": 1
   }
 ]

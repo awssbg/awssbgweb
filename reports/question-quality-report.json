@@ -1,0 +1,28 @@
+{
+  "source": "content\\clf-c02-question-bank.json",
+  "total_questions": 45,
+  "by_certification": {
+    "cloud-practitioner": {
+      "total": 45,
+      "domains": {
+        "Cloud concepts": 14,
+        "Security and compliance": 14,
+        "Cloud technology and services": 15,
+        "Billing and pricing": 2
+      },
+      "difficulty": {
+        "easy": 12,
+        "medium": 33
+      },
+      "question_types": {
+        "single_answer": 38,
+        "multiple_response": 7
+      }
+    }
+  },
+  "duplicate_external_ids": [],
+  "exact_question_text_duplicates": [],
+  "normalized_question_text_duplicates": [],
+  "duplicate_option_sets": [],
+  "near_duplicate_candidates": []
+}

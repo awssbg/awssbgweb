@@ -1,0 +1,1747 @@
+[
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-001",
+    "domain": "Cloud concepts",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "A team wants to avoid buying servers before it knows how popular a new application will become. Which AWS Cloud benefit best supports this goal?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Trade fixed infrastructure cost for variable expense"
+      },
+      {
+        "key": "B",
+        "text": "Use one physical data center permanently"
+      },
+      {
+        "key": "C",
+        "text": "Purchase hardware for peak demand"
+      },
+      {
+        "key": "D",
+        "text": "Manage every hardware component directly"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS lets organizations consume resources when needed instead of making large upfront hardware purchases. Buying for peak demand and operating a permanent data center retain fixed-capacity costs.",
+    "reference_links": [
+      {
+        "title": "AWS Cloud value framework",
+        "url": "https://aws.amazon.com/what-is-cloud-computing/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-002",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A learning platform expects enrollment traffic to rise sharply for two weeks and then return to normal. Which cloud characteristic is most relevant?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Elasticity"
+      },
+      {
+        "key": "B",
+        "text": "Manual capacity procurement"
+      },
+      {
+        "key": "C",
+        "text": "Single-server operation"
+      },
+      {
+        "key": "D",
+        "text": "Fixed monthly hardware ownership"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Elasticity is the ability to add and remove capacity as demand changes. It avoids permanently owning capacity that is only needed during the enrollment period.",
+    "reference_links": [
+      {
+        "title": "AWS Cloud computing",
+        "url": "https://aws.amazon.com/what-is-cloud-computing/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-003",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "An organization wants a structured approach to assess operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. Which AWS resource is designed for this purpose?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Well-Architected Framework"
+      },
+      {
+        "key": "B",
+        "text": "AWS Pricing Calculator"
+      },
+      {
+        "key": "C",
+        "text": "Amazon Route 53"
+      },
+      {
+        "key": "D",
+        "text": "AWS Artifact"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "The AWS Well-Architected Framework organizes architectural review around these pillars. Pricing Calculator estimates costs, Artifact provides compliance documents, and Route 53 provides DNS-related capabilities.",
+    "reference_links": [
+      {
+        "title": "AWS Well-Architected Framework",
+        "url": "https://aws.amazon.com/architecture/well-architected/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-004",
+    "domain": "Cloud concepts",
+    "difficulty": "easy",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO statements describe AWS Regions and Availability Zones? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Region is a physical geographic area containing multiple Availability Zones."
+      },
+      {
+        "key": "B",
+        "text": "Availability Zones in a Region are designed to be isolated from failures in other Availability Zones."
+      },
+      {
+        "key": "C",
+        "text": "Each Availability Zone always spans every AWS Region."
+      },
+      {
+        "key": "D",
+        "text": "An Availability Zone is the same as an AWS account."
+      },
+      {
+        "key": "E",
+        "text": "A Region can contain only one data center."
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "Regions are geographic areas containing multiple isolated Availability Zones. AWS accounts are logical boundaries, and an Availability Zone is not a global construct or a single mandatory data center definition.",
+    "reference_links": [
+      {
+        "title": "AWS global infrastructure",
+        "url": "https://aws.amazon.com/about-aws/global-infrastructure/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-005",
+    "domain": "Security and compliance",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Under the AWS shared responsibility model, which task is AWS responsible for?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Protecting the physical facilities that run AWS infrastructure"
+      },
+      {
+        "key": "B",
+        "text": "Choosing each customer IAM password policy"
+      },
+      {
+        "key": "C",
+        "text": "Classifying each customer's data"
+      },
+      {
+        "key": "D",
+        "text": "Approving each customer's application code changes"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS is responsible for security of the cloud, including physical infrastructure. Customers remain responsible for security in the cloud, including IAM configuration, data classification, and application decisions.",
+    "reference_links": [
+      {
+        "title": "AWS shared responsibility model",
+        "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-006",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A manager needs to give a new employee access to AWS resources according to job responsibilities. Which AWS service provides identity and access management?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Identity and Access Management (IAM)"
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "key": "C",
+        "text": "Amazon S3 Glacier"
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "IAM manages identities and permissions for AWS resources. CloudFront delivers content, S3 Glacier provides archival storage, and Snowball supports data transfer.",
+    "reference_links": [
+      {
+        "title": "IAM User Guide",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-007",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO actions follow IAM security best practices for human access? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use temporary credentials where possible."
+      },
+      {
+        "key": "B",
+        "text": "Require multi-factor authentication for privileged access."
+      },
+      {
+        "key": "C",
+        "text": "Share one administrator password among operators."
+      },
+      {
+        "key": "D",
+        "text": "Embed long-term access keys in public source repositories."
+      },
+      {
+        "key": "E",
+        "text": "Use the root user for daily administration."
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "Temporary credentials and MFA reduce credential risk. Shared passwords, exposed keys, and routine root-user use weaken accountability and security.",
+    "reference_links": [
+      {
+        "title": "IAM security best practices",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-008",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service helps a company review downloadable AWS compliance reports and agreements?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "B",
+        "text": "Amazon Inspector"
+      },
+      {
+        "key": "C",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "D",
+        "text": "Amazon CloudWatch"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Artifact provides on-demand access to AWS compliance reports and agreements. Inspector assesses workloads, CloudTrail records API activity, and CloudWatch monitors resources and applications.",
+    "reference_links": [
+      {
+        "title": "AWS Artifact",
+        "url": "https://aws.amazon.com/artifact/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-009",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A security team wants to detect potentially malicious activity such as unusual API behavior across its AWS account. Which managed service is most appropriate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EFS"
+      },
+      {
+        "key": "C",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "key": "D",
+        "text": "Amazon WorkSpaces"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon GuardDuty is a managed threat-detection service that analyzes AWS data sources for potentially malicious activity. The other services provide file storage, private connectivity, or virtual desktops.",
+    "reference_links": [
+      {
+        "title": "Amazon GuardDuty",
+        "url": "https://aws.amazon.com/guardduty/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-010",
+    "domain": "Cloud technology and services",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service provides resizable virtual servers for running applications?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EC2"
+      },
+      {
+        "key": "B",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "C",
+        "text": "Amazon RDS"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Route 53"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon EC2 provides virtual servers called instances. Amazon S3 is object storage, Amazon RDS is managed relational databases, and Route 53 provides DNS and related routing services.",
+    "reference_links": [
+      {
+        "title": "Amazon EC2",
+        "url": "https://aws.amazon.com/ec2/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-011",
+    "domain": "Cloud technology and services",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "A department needs durable object storage for reports, images, and backups. Which AWS service is designed for this use?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "key": "C",
+        "text": "Amazon ElastiCache"
+      },
+      {
+        "key": "D",
+        "text": "AWS IAM"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon S3 is AWS object storage. EC2 provides compute, ElastiCache provides in-memory caching, and IAM manages access controls.",
+    "reference_links": [
+      {
+        "title": "Amazon S3",
+        "url": "https://aws.amazon.com/s3/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-012",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A mobile team wants to run code in response to events without provisioning or managing servers. Which AWS compute service best fits?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Lambda"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EC2 Dedicated Hosts"
+      },
+      {
+        "key": "C",
+        "text": "AWS Outposts"
+      },
+      {
+        "key": "D",
+        "text": "Amazon EBS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Lambda runs code in response to events while AWS manages the underlying compute infrastructure. Dedicated Hosts, Outposts, and EBS do not provide this event-driven serverless execution model.",
+    "reference_links": [
+      {
+        "title": "AWS Lambda",
+        "url": "https://aws.amazon.com/lambda/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-013",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service provides a managed relational database while reducing routine database administration tasks such as backups and software patching?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon RDS"
+      },
+      {
+        "key": "B",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "key": "C",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "D",
+        "text": "Amazon SNS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon RDS is a managed relational database service that automates common administration tasks. DynamoDB is a nonrelational database service, S3 is storage, and SNS is messaging.",
+    "reference_links": [
+      {
+        "title": "Amazon RDS",
+        "url": "https://aws.amazon.com/rds/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-014",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO AWS services can help deliver alerts or notifications to subscribers? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon SNS"
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudWatch"
+      },
+      {
+        "key": "C",
+        "text": "Amazon EBS"
+      },
+      {
+        "key": "D",
+        "text": "Amazon VPC"
+      },
+      {
+        "key": "E",
+        "text": "AWS KMS"
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "Amazon SNS sends notifications to subscribers, and CloudWatch alarms can notify through configured actions such as SNS. EBS is block storage, VPC is networking, and KMS manages encryption keys.",
+    "reference_links": [
+      {
+        "title": "Amazon SNS",
+        "url": "https://aws.amazon.com/sns/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-015",
+    "domain": "Billing and pricing",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS tool helps a customer estimate a planned workload's monthly AWS charges before creating resources?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Pricing Calculator"
+      },
+      {
+        "key": "B",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "C",
+        "text": "Amazon Inspector"
+      },
+      {
+        "key": "D",
+        "text": "AWS IAM Access Analyzer"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Pricing Calculator estimates costs for planned AWS usage. CloudTrail records API actions, Inspector assesses security exposure, and IAM Access Analyzer evaluates access policies.",
+    "reference_links": [
+      {
+        "title": "AWS Pricing Calculator",
+        "url": "https://calculator.aws/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-016",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A company wants to move a server-based application to AWS quickly with minimal code changes. Which migration strategy is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rehost"
+      },
+      {
+        "key": "B",
+        "text": "Refactor"
+      },
+      {
+        "key": "C",
+        "text": "Retire"
+      },
+      {
+        "key": "D",
+        "text": "Repurchase"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Rehosting moves an existing application with minimal changes. Refactoring changes the architecture, retiring removes it, and repurchasing adopts a different product.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-017",
+    "domain": "Cloud concepts",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which cloud characteristic helps an organization avoid paying for capacity that is idle after a seasonal event?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Elasticity"
+      },
+      {
+        "key": "B",
+        "text": "Hardware ownership"
+      },
+      {
+        "key": "C",
+        "text": "Manual procurement"
+      },
+      {
+        "key": "D",
+        "text": "Single-tenancy"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Elasticity allows capacity to grow and shrink with demand. The other choices do not inherently remove unused capacity.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-018",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO benefits are commonly provided by infrastructure as code? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Repeatable provisioning"
+      },
+      {
+        "key": "B",
+        "text": "Version-controlled definitions"
+      },
+      {
+        "key": "C",
+        "text": "Manual setup on every server"
+      },
+      {
+        "key": "D",
+        "text": "Guaranteed defect-free applications"
+      },
+      {
+        "key": "E",
+        "text": "Removal of security reviews"
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "Infrastructure as code supports repeatability and version control. It does not guarantee defect-free applications or replace security review.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-019",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS framework helps organizations plan cloud transformation across business, people, governance, platform, security, and operations perspectives?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Cloud Adoption Framework"
+      },
+      {
+        "key": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "C",
+        "text": "AWS Budgets"
+      },
+      {
+        "key": "D",
+        "text": "Amazon CloudWatch"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS CAF provides transformation guidance across multiple organizational perspectives. Artifact, Budgets, and CloudWatch have narrower purposes.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-020",
+    "domain": "Security and compliance",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service records API activity in an AWS account for audit purposes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "key": "C",
+        "text": "Amazon EFS"
+      },
+      {
+        "key": "D",
+        "text": "AWS Lambda"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudTrail records AWS API activity. CloudFront delivers content, EFS provides file storage, and Lambda runs code.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-021",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service centrally manages encryption keys used by applications and AWS services?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Key Management Service"
+      },
+      {
+        "key": "B",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "key": "C",
+        "text": "AWS Shield"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS KMS creates and manages encryption keys. GuardDuty, Shield, and Inspector serve threat detection or protection purposes.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-022",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO practices help protect objects in Amazon S3? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use restrictive IAM and bucket policies"
+      },
+      {
+        "key": "B",
+        "text": "Enable encryption for stored objects"
+      },
+      {
+        "key": "C",
+        "text": "Make every bucket public"
+      },
+      {
+        "key": "D",
+        "text": "Store root keys in object metadata"
+      },
+      {
+        "key": "E",
+        "text": "Disable logging for sensitive buckets"
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "Access controls and encryption protect S3 data. Public access, root-key storage, and disabled logging increase risk.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-023",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service helps identify unintended access granted to resources through IAM policies?",
+    "options": [
+      {
+        "key": "A",
+        "text": "IAM Access Analyzer"
+      },
+      {
+        "key": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "C",
+        "text": "Amazon Macie"
+      },
+      {
+        "key": "D",
+        "text": "AWS Budgets"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "IAM Access Analyzer identifies external or public access allowed by policies. Artifact supplies documents, Macie discovers sensitive data, and Budgets tracks spend.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-024",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which managed AWS service can help discover sensitive data in Amazon S3?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "key": "B",
+        "text": "Amazon Route 53"
+      },
+      {
+        "key": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "key": "D",
+        "text": "Amazon ECS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon Macie helps discover sensitive data in S3. The distractors provide DNS, infrastructure templates, and container orchestration.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-025",
+    "domain": "Cloud technology and services",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service provides a logically isolated virtual network with subnets and route tables?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon VPC"
+      },
+      {
+        "key": "B",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "C",
+        "text": "Amazon SNS"
+      },
+      {
+        "key": "D",
+        "text": "AWS Organizations"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon VPC provides virtual networking. S3 is object storage, SNS is messaging, and Organizations manages accounts.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-026",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service caches website content closer to viewers worldwide?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EBS"
+      },
+      {
+        "key": "C",
+        "text": "AWS IAM"
+      },
+      {
+        "key": "D",
+        "text": "Amazon RDS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFront is a content delivery network with edge caching. EBS, IAM, and RDS serve storage, identity, and database needs.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-027",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service is a managed NoSQL database designed for low-latency access at scale?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "key": "B",
+        "text": "Amazon RDS"
+      },
+      {
+        "key": "C",
+        "text": "Amazon EFS"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Redshift"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "DynamoDB is a managed NoSQL database. RDS is relational, EFS is file storage, and Redshift is a data warehouse.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-028",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO services help teams observe application and account activity? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon CloudWatch"
+      },
+      {
+        "key": "B",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "C",
+        "text": "Amazon S3 Glacier"
+      },
+      {
+        "key": "D",
+        "text": "AWS Snowball"
+      },
+      {
+        "key": "E",
+        "text": "Amazon EBS"
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "CloudWatch provides metrics, logs, and alarms, while CloudTrail records API activity. The other services do not provide those general observation roles.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-029",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service centrally governs multiple AWS accounts and supports service control policies?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Organizations"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EventBridge"
+      },
+      {
+        "key": "C",
+        "text": "AWS Lambda"
+      },
+      {
+        "key": "D",
+        "text": "Amazon SQS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Organizations manages multiple accounts and service control policies. The other services support event-driven application patterns.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-030",
+    "domain": "Billing and pricing",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service can alert a finance team before monthly spending exceeds a planned threshold?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Budgets"
+      },
+      {
+        "key": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "C",
+        "text": "Amazon Inspector"
+      },
+      {
+        "key": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS Budgets can track cost or usage against thresholds and send alerts. The other services do not provide budget alerting.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-031",
+    "domain": "Cloud concepts",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS model lets a customer use computing resources when needed instead of purchasing servers?",
+    "options": [
+      {
+        "key": "A",
+        "text": "On-demand cloud consumption"
+      },
+      {
+        "key": "B",
+        "text": "Annual hardware ownership"
+      },
+      {
+        "key": "C",
+        "text": "Manual datacenter expansion"
+      },
+      {
+        "key": "D",
+        "text": "Fixed physical capacity"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Cloud consumption provides resources on demand. Purchasing and fixed capacity require upfront planning and ownership.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-032",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A workload must continue when one component fails. Which cloud design principle is most relevant?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Design for failure"
+      },
+      {
+        "key": "B",
+        "text": "Use a single larger server"
+      },
+      {
+        "key": "C",
+        "text": "Remove monitoring"
+      },
+      {
+        "key": "D",
+        "text": "Avoid automation"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Designing for failure uses redundancy and recovery. A larger single server and reduced monitoring increase risk.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-033",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which migration approach replaces an existing application with a cloud-based software product?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Repurchase"
+      },
+      {
+        "key": "B",
+        "text": "Rehost"
+      },
+      {
+        "key": "C",
+        "text": "Relocate"
+      },
+      {
+        "key": "D",
+        "text": "Retain"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Repurchase adopts a different product, often SaaS. Rehost moves an application, relocate moves virtualized workloads, and retain keeps it unchanged.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-034",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS benefit helps teams experiment without waiting for hardware procurement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rapid resource provisioning"
+      },
+      {
+        "key": "B",
+        "text": "Mandatory long-term contracts"
+      },
+      {
+        "key": "C",
+        "text": "Physical server assembly"
+      },
+      {
+        "key": "D",
+        "text": "Fixed maximum capacity"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS resources can be provisioned rapidly. Hardware procurement and fixed capacity slow experimentation.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-035",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS Cloud value proposition helps a startup enter new geographic markets without building its own data centers?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Global infrastructure availability"
+      },
+      {
+        "key": "B",
+        "text": "Root-user access"
+      },
+      {
+        "key": "C",
+        "text": "Single-AZ operation"
+      },
+      {
+        "key": "D",
+        "text": "Manual tape backups"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS global infrastructure lets customers deploy in multiple geographic Regions. The other options do not provide market expansion capability.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-036",
+    "domain": "Cloud concepts",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which practice helps an organization turn off development resources that are not needed overnight?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Automate schedules for nonproduction resources"
+      },
+      {
+        "key": "B",
+        "text": "Increase every instance size"
+      },
+      {
+        "key": "C",
+        "text": "Move all workloads to one server"
+      },
+      {
+        "key": "D",
+        "text": "Disable billing visibility"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Scheduling nonproduction resources reduces unnecessary consumption. The other options do not address idle-resource cost.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-037",
+    "domain": "Security and compliance",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which account credential should be protected most carefully and not used for everyday tasks?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS account root user credentials"
+      },
+      {
+        "key": "B",
+        "text": "An S3 object key"
+      },
+      {
+        "key": "C",
+        "text": "A CloudWatch metric name"
+      },
+      {
+        "key": "D",
+        "text": "An EC2 tag"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Root credentials have broad account privileges and should not be used for routine access. The other items are not account credentials.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-038",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service helps protect web applications from common web exploits by filtering HTTP requests?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS WAF"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EFS"
+      },
+      {
+        "key": "C",
+        "text": "AWS Snowball"
+      },
+      {
+        "key": "D",
+        "text": "Amazon SES"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "AWS WAF filters web requests using rules. EFS is storage, Snowball is transfer hardware, and SES is email.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-039",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service helps assess EC2 workloads for software vulnerabilities and unintended network exposure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon Inspector"
+      },
+      {
+        "key": "B",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "key": "D",
+        "text": "Amazon SQS"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon Inspector provides automated vulnerability management. Artifact provides documents, CloudFront delivers content, and SQS queues messages.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-040",
+    "domain": "Security and compliance",
+    "difficulty": "medium",
+    "question_type": "multiple_response",
+    "question_text": "Which TWO controls help limit unauthorized access to an AWS account? Choose TWO.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enable MFA"
+      },
+      {
+        "key": "B",
+        "text": "Apply least-privilege permissions"
+      },
+      {
+        "key": "C",
+        "text": "Share IAM users"
+      },
+      {
+        "key": "D",
+        "text": "Use root keys in applications"
+      },
+      {
+        "key": "E",
+        "text": "Disable CloudTrail"
+      }
+    ],
+    "correct_option_keys": [
+      "A",
+      "B"
+    ],
+    "explanation": "MFA and least privilege reduce unauthorized access. Shared identities, embedded root keys, and disabled auditing increase risk.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-041",
+    "domain": "Cloud technology and services",
+    "difficulty": "easy",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service provides a managed message queue that decouples application components?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon SQS"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "key": "C",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "D",
+        "text": "AWS IAM"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon SQS provides message queues for decoupling. EC2 is compute, S3 is storage, and IAM manages access.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-042",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service provides shared file storage that multiple Linux instances can mount?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon EFS"
+      },
+      {
+        "key": "B",
+        "text": "Amazon EBS"
+      },
+      {
+        "key": "C",
+        "text": "Amazon S3"
+      },
+      {
+        "key": "D",
+        "text": "Amazon DynamoDB"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Amazon EFS provides shared elastic file storage. EBS is block storage for an instance, S3 is object storage, and DynamoDB is a database.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-043",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "A developer needs to coordinate steps in a workflow with retries and state tracking. Which service is appropriate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS Step Functions"
+      },
+      {
+        "key": "B",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "key": "C",
+        "text": "AWS Artifact"
+      },
+      {
+        "key": "D",
+        "text": "Amazon Route 53"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Step Functions orchestrates workflows with state and retries. The other services provide CDN, documents, and DNS.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-044",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service lets users query data in Amazon S3 using standard SQL without managing servers?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amazon Athena"
+      },
+      {
+        "key": "B",
+        "text": "Amazon RDS"
+      },
+      {
+        "key": "C",
+        "text": "Amazon EC2"
+      },
+      {
+        "key": "D",
+        "text": "Amazon ElastiCache"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "Athena queries S3 data using SQL without managing infrastructure. The other services provide databases, compute, or caching.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  },
+  {
+    "certification": "cloud-practitioner",
+    "exam_code": "CLF-C02",
+    "external_id": "CLF-045",
+    "domain": "Cloud technology and services",
+    "difficulty": "medium",
+    "question_type": "single_answer",
+    "question_text": "Which AWS service creates infrastructure from declarative templates?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "key": "B",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "key": "C",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "key": "D",
+        "text": "AWS Budgets"
+      }
+    ],
+    "correct_option_keys": [
+      "A"
+    ],
+    "explanation": "CloudFormation provisions infrastructure from templates. CloudTrail audits, GuardDuty detects threats, and Budgets tracks cost.",
+    "reference_links": [
+      {
+        "title": "AWS Documentation",
+        "url": "https://docs.aws.amazon.com/"
+      }
+    ],
+    "publication_status": "draft"
+  }
+]
