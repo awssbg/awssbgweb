@@ -14,6 +14,7 @@
     client = createClient(config.url, config.anonKey, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
   } catch (error) { window.sbgBackend = unavailable(error.message); window.dispatchEvent(new Event('sbg-backend-ready')); return; }
   const unwrap = async request => { const { data, error } = await request; if (error) throw error; return data; };
+  const friendlyError = error => { const message=String(error?.message||error||'Unable to complete this request.'); if(/provider is not enabled|unsupported provider/i.test(message))return 'Google sign-in is not configured. Please use email sign-in or contact the administrator.'; if(/email not confirmed/i.test(message))return 'Please verify your email address, then sign in.'; if(/invalid login/i.test(message))return 'Email or password is incorrect.'; if(/already registered/i.test(message))return 'An account already exists for this email. Try signing in instead.'; if(/password/i.test(message))return 'Choose a password that meets the required security rules.'; if(/network|fetch/i.test(message))return 'Network connection failed. Please try again.'; return message; };
   const mustUser = async () => { const { data: { user } } = await client.auth.getUser(); if (!user) throw new Error('Please sign in to save cloud practice progress.'); return user; };
   window.sbgBackend = {
     available: true, client,
@@ -23,8 +24,8 @@
       signIn: ({ email, password }) => unwrap(client.auth.signInWithPassword({ email, password })),
       signOut: () => unwrap(client.auth.signOut()),
       resetPassword: (email, redirectTo) => unwrap(client.auth.resetPasswordForEmail(email, { redirectTo })),
-      signInWithGoogle: redirectTo => unwrap(client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })),
-      onAuthStateChange: callback => client.auth.onAuthStateChange(callback)
+      async signInWithGoogle(redirectTo) { const settings=await fetch(`${config.url}/auth/v1/settings`,{headers:{apikey:config.anonKey}}).then(response=>response.ok?response.json():null); if(!settings?.external?.google)throw new Error('Google sign-in is not configured. Please use email sign-in or contact the administrator.'); return unwrap(client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })); },
+      onAuthStateChange: callback => client.auth.onAuthStateChange(callback), friendlyError
     },
     certifications: {
       list: () => unwrap(client.from('certification_catalog').select('*').eq('active', true).order('level').order('name')),
@@ -40,10 +41,11 @@
       async active() { await mustUser(); return unwrap(client.from('exam_attempts').select('id, certification_id, certifications(slug,short_name)').eq('status', 'in_progress').gt('expires_at', new Date().toISOString()).order('started_at', { ascending: false }).limit(1)); },
       async result(attemptId) { await mustUser(); return unwrap(client.rpc('get_exam_review', { p_attempt_id: attemptId })); }
     },
+    profile: { async get() { const user=await mustUser(); return unwrap(client.from('profiles').select('display_name,avatar_url,created_at').eq('id',user.id).single()); } },
     progress: { dashboard: async () => { await mustUser(); return unwrap(client.rpc('my_dashboard')); } },
     saved: {
       async toggle(questionId, enabled) { const user = await mustUser(); return enabled ? unwrap(client.from('saved_questions').upsert({ user_id: user.id, question_id: questionId })) : unwrap(client.from('saved_questions').delete().eq('user_id', user.id).eq('question_id', questionId)); },
       async list() { await mustUser(); return unwrap(client.from('saved_questions').select('question_id,created_at').order('created_at', { ascending: false })); }
     }
-  }; window.dispatchEvent(new Event('sbg-backend-ready'));
+  }; client.auth.onAuthStateChange((event, session) => window.dispatchEvent(new CustomEvent('sbg-auth-state', { detail: { event, session } }))); window.dispatchEvent(new Event('sbg-backend-ready'));
 })();

@@ -12,4 +12,6 @@ assert(/^begin;[\s\S]*commit;\s*$/im.test(sql), 'initial migration must be trans
 const questions = JSON.parse(fs.readFileSync('supabase/existing-questions.seed.json', 'utf8'));
 assert(questions.every(question => question.certification === 'solutions-architect-associate'), 'existing SAA questions must use the canonical SAA slug');
 assert(questions.every(question => Array.isArray(question.reference_links)), 'question seed must use reference_links');
+const evolution = fs.readFileSync('supabase/migrations/003_exam_versions_content_readiness.sql', 'utf8');
+for (const required of ['certification_exam_versions', 'publication_status', 'exam_version_id', 'minimum_practice_available', "publication_status='published'"]) assert(evolution.includes(required), `missing schema evolution: ${required}`);
 console.log('Backend contract checks passed.');

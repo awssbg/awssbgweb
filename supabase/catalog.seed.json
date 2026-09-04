@@ -1,7 +1,7 @@
 [
   {
     "slug": "ai-business-strategist",
-    "code": "AI-B01",
+    "code": "AIB-C01",
     "name": "AWS Certified AI Business Strategist",
     "short_name": "AI Business Strategist",
     "level": "Business",
@@ -10,9 +10,10 @@
     "official_question_count": 85,
     "official_duration_minutes": 170,
     "domains": [
-      "AI strategy",
-      "Business value",
-      "Governance"
+      "AI Fundamentals and Literacy",
+      "AI Strategy and Business Value Creation",
+      "AI Governance and Responsible AI Leadership",
+      "Business Readiness, Leadership, and AI Transformation"
     ]
   },
   {

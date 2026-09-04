@@ -67,6 +67,16 @@ http://localhost:8888/certification-practice
 
 Enable Email auth. For Google, enable the Google provider in Supabase, add its Supabase callback URL to Google Cloud OAuth credentials, then save the Google Client ID and Client Secret **only in Supabase**, not in this repository.
 
+### Google OAuth production setup
+
+1. In Google Cloud Console, configure the OAuth consent screen and create a **Web application** OAuth client.
+2. Add `https://pcaagoqedgaffmudevgt.supabase.co/auth/v1/callback` as the authorized redirect URI in Google. This is the Supabase callback, not the website URL.
+3. In Supabase **Authentication → Providers → Google**, enable Google and enter that Google Client ID and Client Secret there. Never commit either value or add it to Netlify/browser variables.
+4. In Supabase **Authentication → URL Configuration**, set Site URL to `https://awssbg.iedclbscek.in` and add `https://awssbg.iedclbscek.in/certification-practice` to Redirect URLs.
+5. Test the button. When the provider is disabled, the application keeps users on the site and shows an email-sign-in fallback instead of redirecting to a raw Supabase error.
+
+Supabase's publishable/anon key identifies the public browser client. It is unrelated to Google OAuth credentials and cannot administer the project. Configure production SMTP in Supabase when the default email sender is insufficient for expected student volume.
+
 ## Security model
 
 - `question_answers` has no public SELECT policy.
