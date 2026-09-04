@@ -9,10 +9,10 @@
       if (response.ok) config = await response.json();
     }
     config ||= unavailable('Backend configuration is unavailable.');
-    if (!config.configured) throw new Error('The cloud practice backend has not been configured yet.');
+    if (!config.url || !config.anonKey) throw new Error('The cloud practice backend has not been configured yet.');
     const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2');
     client = createClient(config.url, config.anonKey, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
-  } catch (error) { window.sbgBackend = unavailable(error.message); return; }
+  } catch (error) { window.sbgBackend = unavailable(error.message); window.dispatchEvent(new Event('sbg-backend-ready')); return; }
   const unwrap = async request => { const { data, error } = await request; if (error) throw error; return data; };
   const mustUser = async () => { const { data: { user } } = await client.auth.getUser(); if (!user) throw new Error('Please sign in to save cloud practice progress.'); return user; };
   window.sbgBackend = {

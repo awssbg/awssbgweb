@@ -2,10 +2,6 @@
 export default async () => {
   const url = process.env.SUPABASE_URL;
   const anonKey = process.env.SUPABASE_ANON_KEY;
-  if (!url || !anonKey) return { statusCode: 503, body: JSON.stringify({ configured: false }) };
-  return {
-    statusCode: 200,
-    headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
-    body: JSON.stringify({ configured: true, url, anonKey })
-  };
+  if (!url || !anonKey) return Response.json({ configured: false }, { status: 503, headers: { 'cache-control': 'no-store' } });
+  return Response.json({ configured: true, url, anonKey }, { headers: { 'cache-control': 'no-store' } });
 };
