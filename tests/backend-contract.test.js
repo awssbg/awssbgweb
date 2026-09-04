@@ -14,4 +14,7 @@ assert(questions.every(question => question.certification === 'solutions-archite
 assert(questions.every(question => Array.isArray(question.reference_links)), 'question seed must use reference_links');
 const evolution = fs.readFileSync('supabase/migrations/003_exam_versions_content_readiness.sql', 'utf8');
 for (const required of ['certification_exam_versions', 'publication_status', 'exam_version_id', 'minimum_practice_available', "publication_status='published'"]) assert(evolution.includes(required), `missing schema evolution: ${required}`);
+const statusFix = fs.readFileSync('supabase/migrations/004_fix_exam_attempt_status_enum.sql', 'utf8');
+for (const required of ["'in_progress'::public.attempt_status", "'submitted'::public.attempt_status", "'expired'::public.attempt_status", 'function public.submit_exam', 'for update']) assert(statusFix.includes(required), `missing enum-safe submission contract: ${required}`);
+assert(!/set\s+status\s*=\s*case[\s\S]*then\s+'expired'(?!::public\.attempt_status)[\s\S]*else\s+'submitted'(?!::public\.attempt_status)/i.test(statusFix), 'submission status CASE must use attempt_status values');
 console.log('Backend contract checks passed.');
