@@ -112,7 +112,8 @@
       if (!members.length) throw new Error('No existing core-builder records were found.');
       target.innerHTML = members.map((member) => {
         const socialLinks = [member.linkedin !== '#' ? `<a href="${escapeHtml(member.linkedin)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(member.name)} LinkedIn">IN</a>` : '', member.github !== '#' ? `<a href="${escapeHtml(member.github)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(member.name)} GitHub">GH</a>` : ''].join('');
-        return `<article class="launch-mask__member"><img src="${escapeHtml(member.photo)}" alt="${escapeHtml(member.name)}" width="${member.width}" height="${member.height}" loading="lazy" decoding="async"><div><h3>${escapeHtml(member.name)}</h3><p>${escapeHtml(member.position)}</p></div>${socialLinks ? `<span class="launch-mask__member-links">${socialLinks}</span>` : ''}</article>`;
+        const optimizedBase = member.photo.replace(/^assets\/team\//, 'assets/team/optimized/').replace(/\.[^.]+$/, '');
+        return `<article class="launch-mask__member"><picture><source srcset="${escapeHtml(optimizedBase)}.avif" type="image/avif"><source srcset="${escapeHtml(optimizedBase)}.webp" type="image/webp"><img src="${escapeHtml(member.photo)}" alt="${escapeHtml(member.name)}" width="${member.width}" height="${member.height}" loading="lazy" decoding="async"></picture><div><h3>${escapeHtml(member.name)}</h3><p>${escapeHtml(member.position)}</p></div>${socialLinks ? `<span class="launch-mask__member-links">${socialLinks}</span>` : ''}</article>`;
       }).join('');
     } catch { target.hidden = true; }
   };
