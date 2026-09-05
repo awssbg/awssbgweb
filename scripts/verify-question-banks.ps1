@@ -43,7 +43,11 @@ function Read-Bank {
     Assert-Condition ((@($question.correct_option_keys | Where-Object { $_ -notin $keys }).Count) -eq 0) "$($question.external_id) maps an answer to a missing option."
     if ($question.question_type -eq 'single_answer') { Assert-Condition (@($question.correct_option_keys).Count -eq 1) "$($question.external_id) must have exactly one correct option." }
     if ($question.question_type -eq 'multiple_response') { Assert-Condition (@($question.correct_option_keys).Count -ge 2) "$($question.external_id) must have at least two correct options." }
-    $domains[$question.domain] = 1 + [int]($domains[$question.domain] ?? 0)
+    if ($domains.ContainsKey($question.domain)) {
+    $domains[$question.domain] = [int]$domains[$question.domain] + 1
+} else {
+    $domains[$question.domain] = 1
+}
     $key = ($question.question_text.ToLowerInvariant() -replace '[^a-z0-9]+', ' ').Trim() -replace '\s+', ' '
     Assert-Condition (-not $normalizedText.ContainsKey($key)) "$($question.external_id) has normalized duplicate question text with $($normalizedText[$key])."
     $normalizedText[$key] = $question.external_id
