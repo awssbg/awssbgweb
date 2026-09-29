@@ -1,0 +1,145 @@
+from pathlib import Path
+
+html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="3;url=https://chat.whatsapp.com/IsFZy6tq4LqBGeSNGmzS2d" />
+  <title>AWS SBG LBSCEK — WhatsApp Group</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111820;
+      --card: #19232d;
+      --text: #f5f7fa;
+      --muted: #aab4bf;
+      --accent: #ff4fd8;
+      --accent-hover: #ff6ee0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
+        var(--bg);
+      background-size: 48px 48px;
+      color: var(--text);
+    }
+
+    .card {
+      width: min(520px, 100%);
+      padding: 42px 32px 34px;
+      text-align: center;
+      background: rgba(25, 35, 45, 0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      box-shadow: 0 20px 70px rgba(0,0,0,0.35);
+    }
+
+    .brand {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .brand span { color: var(--accent); }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(24px, 5vw, 34px);
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 10px 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .countdown {
+      margin: 22px 0;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #111;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .small {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #7f8a95;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">AWS SBG <span>LBSCEK</span></div>
+    <h1>Join the WhatsApp Group</h1>
+    <p>You’re being redirected to the official event WhatsApp group.</p>
+    <div class="countdown">
+      Redirecting in <span id="seconds">3</span> seconds…
+    </div>
+
+    <a
+      class="btn"
+      href="https://chat.whatsapp.com/IsFZy6tq4LqBGeSNGmzS2d"
+      rel="noopener noreferrer"
+    >
+      Continue to WhatsApp
+    </a>
+
+    <div class="small">
+      If automatic redirection does not work, use the button above.
+    </div>
+  </main>
+
+  <script>
+    const target = "https://chat.whatsapp.com/IsFZy6tq4LqBGeSNGmzS2d";
+    let seconds = 3;
+    const secondsEl = document.getElementById("seconds");
+
+    const timer = setInterval(() => {
+      seconds -= 1;
+      secondsEl.textContent = seconds;
+
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.replace(target);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+"""
+
+out = Path("/mnt/data/oct7-whatsapp-redirect.html")
+out.write_text(html, encoding="utf-8")
+print(out)
