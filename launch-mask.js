@@ -17,7 +17,7 @@
     body.launch-mask-active { overflow: hidden !important; }
     #launch-mask { --mask-bg:#090b16; --mask-surface:#101321; --mask-line:rgba(187,198,255,.16); --mask-ink:#f5f3ed; --mask-muted:#bbc1d4; --mask-pink:#f248c6; --mask-violet:#8059f6; position:fixed; z-index:2147483647; inset:0; isolation:isolate; overflow:auto; overscroll-behavior:contain; color:var(--mask-ink); background:var(--mask-bg); font-family:Manrope,Inter,Arial,sans-serif; }
     #launch-mask::before,#launch-mask::after { content:""; position:fixed; pointer-events:none; }
-    #launch-mask::before { inset:0; background-image:linear-gradient(var(--mask-line) 1px,transparent 1px),linear-gradient(90deg,var(--mask-line) 1px,transparent 1px); background-size:68px 68px; mask-image:linear-gradient(to bottom,black,rgba(0,0,0,.55)); }
+    #launch-mask::before { inset:0; background-image:linear-gradient(var(--mask-line) 1px,transparent 1px),linear-gradient(90deg,var(--mask-line) 1px,transparent 1px); background-size:68px 68px; mask-image:linear-gradient(to bottom,black,rgba(0,0,0,.55)); animation:launch-mask-scan 4.8s ease-in-out infinite; }
     #launch-mask::after { width:min(58vw,720px); height:min(58vw,720px); right:-18vw; top:-24vw; border:72px solid rgba(128,89,246,.16); box-shadow:0 0 120px rgba(242,72,198,.13); }
     .launch-mask__shell { min-height:100%; max-width:1280px; margin:0 auto; padding:clamp(24px,4vw,56px); display:grid; grid-template-rows:auto 1fr auto; gap:clamp(42px,8vh,90px); position:relative; }
     .launch-mask__top { display:flex; justify-content:space-between; align-items:center; gap:24px; }
@@ -25,11 +25,12 @@
     .launch-mask__logo { width:31px; height:31px; object-fit:contain; }
     .launch-mask__eyebrow,.launch-mask__status,.launch-mask__meta,.launch-mask__socials a,.launch-mask__member p { font-family:"IBM Plex Mono",ui-monospace,monospace; letter-spacing:.08em; text-transform:uppercase; }
     .launch-mask__status { margin:0; color:#9ee0b9; font-size:.72rem; font-weight:700; }
-    .launch-mask__status::before { content:"●"; margin-right:8px; color:#7ae49e; }
+    .launch-mask__status::before { content:"●"; margin-right:8px; color:#7ae49e; animation:launch-mask-signal 2.4s ease-in-out infinite; }
     .launch-mask__content { align-self:center; max-width:940px; }
     .launch-mask__eyebrow { margin:0 0 20px; color:var(--mask-pink); font-size:.76rem; font-weight:700; }
-    .launch-mask h1 { max-width:800px; margin:0; font-size:clamp(3.2rem,9vw,8.6rem); line-height:.86; letter-spacing:-.075em; }
+    .launch-mask h1 { max-width:800px; margin:0; font-size:clamp(3.2rem,9vw,8.6rem); line-height:.86; letter-spacing:-.075em; animation:launch-mask-boot .7s cubic-bezier(.18,.82,.25,1) both,launch-mask-glitch 4.6s steps(2,end) 1.1s 1; }
     .launch-mask h1 em,.launch-mask__team h2 em { color:var(--mask-pink); font-style:normal; }
+    .launch-mask__supporting { max-width:635px; margin:24px 0 0; color:var(--mask-ink); font:700 clamp(.8rem,1.3vw,1rem) "IBM Plex Mono",ui-monospace,monospace; letter-spacing:.06em; line-height:1.5; }
     .launch-mask__copy { max-width:635px; margin:30px 0 0; color:var(--mask-muted); font-size:clamp(1rem,1.5vw,1.2rem); line-height:1.65; }
     .launch-mask__actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:34px; }
     .launch-mask__button { min-height:56px; display:inline-flex; align-items:center; justify-content:center; gap:17px; padding:0 23px; border:1px solid transparent; text-decoration:none; font-weight:800; transition:transform .2s ease,background .2s ease; cursor:pointer; font:inherit; }
@@ -64,6 +65,11 @@
     .launch-mask__credit:hover,.launch-mask__credit:focus-visible { color:var(--mask-pink); outline:none; }
     .launch-mask__socials { display:flex; gap:9px; }
     .launch-mask__socials a { width:39px; height:39px; display:grid; place-items:center; border:1px solid var(--mask-line); color:var(--mask-ink); text-decoration:none; font-size:.7rem; font-weight:700; }
+    @keyframes launch-mask-boot { from { opacity:0; transform:translateY(12px); clip-path:inset(0 0 82% 0); } to { opacity:1; transform:translateY(0); clip-path:inset(0 0 0 0); } }
+    @keyframes launch-mask-glitch { 0%,100% { text-shadow:none; transform:translateX(0); } 24% { text-shadow:2px 0 rgba(242,72,198,.38),-2px 0 rgba(128,89,246,.28); transform:translateX(-1px); } 48% { text-shadow:-2px 0 rgba(242,72,198,.28),2px 0 rgba(128,89,246,.22); transform:translateX(1px); } }
+    @keyframes launch-mask-scan { 0%,100% { opacity:1; background-position:0 0,0 0; } 50% { opacity:.82; background-position:0 8px,8px 0; } }
+    @keyframes launch-mask-signal { 0%,100% { opacity:1; } 50% { opacity:.45; } }
+    @media (prefers-reduced-motion:reduce) { #launch-mask::before,.launch-mask h1,.launch-mask__status::before { animation:none; } }
     @media (max-width:620px) { #launch-mask::before { background-size:44px 44px; } #launch-mask::after { width:68vw; height:68vw; border-width:42px; right:-24vw; top:-12vw; } .launch-mask__shell { padding:22px; gap:44px; } .launch-mask__top { align-items:flex-start; } .launch-mask__brand { font-size:.92rem; } .launch-mask__status { max-width:110px; text-align:right; line-height:1.6; } .launch-mask__content { align-self:start; padding-top:7vh; } .launch-mask h1 { font-size:clamp(3.35rem,17vw,5.5rem); } .launch-mask__copy { margin-top:25px; font-size:1rem; } .launch-mask__actions,.launch-mask__access-form { display:grid; } .launch-mask__button { width:100%; } .launch-mask__team { margin-top:54px; } .launch-mask__team-heading { display:block; } .launch-mask__team-heading .launch-mask__eyebrow { margin-bottom:13px; } .launch-mask__team-grid { grid-template-columns:1fr; } .launch-mask__footer { grid-template-columns:1fr; align-items:start; } .launch-mask__footer-right { justify-items:start; } .launch-mask__access button { min-height:48px; } }
   `;
   document.head.append(style);
@@ -75,15 +81,16 @@
   mask.setAttribute('aria-label', 'AWS SBG launch status');
   mask.innerHTML = `
     <div class="launch-mask__shell">
-      <header class="launch-mask__top"><span class="launch-mask__brand"><img class="launch-mask__logo" src="assets/aws-sbg-lbscek-logo.png" alt="AWS SBG logo">AWS SBG / LBSCEK</span><p class="launch-mask__status">Launch build active</p></header>
+      <header class="launch-mask__top"><span class="launch-mask__brand"><img class="launch-mask__logo" src="assets/aws-sbg-lbscek-logo.png" alt="AWS SBG logo">AWS SBG / LBSCEK</span><p class="launch-mask__status">RECRUITMENT UPDATE // DECEMBER 2026</p></header>
       <main class="launch-mask__content">
-        <p class="launch-mask__eyebrow">SYSTEM STATUS / ASSEMBLING PLATFORM</p><h1>THE BUILD IS<br><em>IN PROGRESS.</em></h1>
-        <p class="launch-mask__copy">We are wiring the next AWS Student Builder Group experience for launch. The platform is being prepared for late October—come build with the community while the final systems come online.</p>
+        <p class="launch-mask__eyebrow">INCOMING TRANSMISSION // LBSCEK</p><h1>A NEW TEAM IS<br><em>DEPLOYING.</em></h1>
+        <p class="launch-mask__supporting">THE NEXT GENERATION OF BUILDERS IS COMING.</p>
+        <p class="launch-mask__copy">A new team. A new mission. The next chapter of AWS SBG / LBSCEK begins this December.</p>
         <div class="launch-mask__actions"><a class="launch-mask__button launch-mask__button--primary" href="https://www.meetup.com/aws-sbg-at-lbs-college-of-engineering/" target="_blank" rel="noopener noreferrer">JOIN THE COMMUNITY <span aria-hidden="true">↗</span></a><a class="launch-mask__button launch-mask__button--ghost" href="mailto:admin@aws.iedclbscek.in">CONTACT THE BUILD TEAM <span aria-hidden="true">↗</span></a></div>
         <section class="launch-mask__access" aria-labelledby="launch-mask-access-label"><p id="launch-mask-access-label" class="launch-mask__access-label">Temporary local access / password required</p><form class="launch-mask__access-form" data-launch-unlock><label class="launch-mask__sr-only" for="launch-mask-password">Temporary access password</label><input id="launch-mask-password" name="password" type="password" autocomplete="off" required><button type="submit">UNLOCK SITE</button></form><p class="launch-mask__access-status" data-launch-access-status aria-live="polite"></p></section>
         <section class="launch-mask__team" aria-labelledby="launch-mask-team-title"><div class="launch-mask__team-heading"><p class="launch-mask__eyebrow">CORE BUILDERS / 09</p><h2 id="launch-mask-team-title">The people behind<br>the <em>build.</em></h2></div><div class="launch-mask__team-grid" data-launch-team aria-live="polite"></div></section>
       </main>
-      <footer class="launch-mask__footer"><p class="launch-mask__meta">LAUNCH WINDOW / LATE OCTOBER<br><a class="launch-mask__email" href="mailto:admin@aws.iedclbscek.in">admin@aws.iedclbscek.in</a></p><div class="launch-mask__footer-right"><nav class="launch-mask__socials" aria-label="AWS SBG social links"><a href="https://www.meetup.com/aws-sbg-at-lbs-college-of-engineering/" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on Meetup">MU</a><a href="https://www.linkedin.com/company/aws-cloud-club-lbscek" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on LinkedIn">IN</a><a href="https://www.instagram.com/awsclub_lbscek/" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on Instagram">IG</a></nav><a class="launch-mask__credit" href="https://gunnerjyo.dev" target="_blank" rel="noopener noreferrer">BUILT BY GUNNERJYO ↗</a></div></footer>
+      <footer class="launch-mask__footer"><p class="launch-mask__meta">WEBSITE LAUNCH / DECEMBER 2026<br><a class="launch-mask__email" href="mailto:admin@aws.iedclbscek.in">admin@aws.iedclbscek.in</a></p><div class="launch-mask__footer-right"><nav class="launch-mask__socials" aria-label="AWS SBG social links"><a href="https://www.meetup.com/aws-sbg-at-lbs-college-of-engineering/" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on Meetup">MU</a><a href="https://www.linkedin.com/company/aws-cloud-club-lbscek" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on LinkedIn">IN</a><a href="https://www.instagram.com/awsclub_lbscek/" target="_blank" rel="noopener noreferrer" aria-label="AWS SBG on Instagram">IG</a></nav><a class="launch-mask__credit" href="https://gunnerjyo.dev" target="_blank" rel="noopener noreferrer">BUILT BY GUNNERJYO ↗</a></div></footer>
     </div>`;
   document.body.classList.add('launch-mask-active');
   document.body.prepend(mask);
