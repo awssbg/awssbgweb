@@ -58,6 +58,14 @@ h1 span{color:var(--purple)}
 .art-status{position:absolute;bottom:20px;right:20px;color:var(--muted)}
 .art-status strong{color:#80cb9a}
 .hero-footer{grid-column:1/-1;display:flex;justify-content:space-between;color:var(--muted);font-size:.58rem}
+.recognition-banner{display:grid;grid-template-columns:auto minmax(250px,1fr) minmax(280px,.9fr);gap:clamp(1.25rem,3vw,3.5rem);align-items:center;padding:clamp(1.5rem,3vw,2.5rem) clamp(1rem,6vw,7.8rem);border-bottom:1px solid var(--line);background:var(--surface)}
+.recognition-marker{width:56px;height:72px;border:1px solid var(--purple);display:grid;place-items:center;position:relative;background:linear-gradient(135deg,rgba(124,77,255,.12),transparent)}
+.recognition-marker:before,.recognition-marker:after{content:"";position:absolute;background:var(--pink)}
+.recognition-marker:before{width:1px;height:18px;top:-1px;left:12px}.recognition-marker:after{width:18px;height:1px;right:-1px;bottom:12px}
+.recognition-marker span{width:14px;height:14px;border:2px solid var(--pink);border-radius:50% 50% 50% 0;transform:rotate(-45deg);position:relative}
+.recognition-marker span:after{content:"";position:absolute;width:4px;height:4px;border-radius:50%;background:var(--pink);left:3px;top:3px}
+.recognition-heading p{color:var(--pink);font-size:.58rem;margin:0 0 .75rem}.recognition-heading h2{font-size:clamp(1.7rem,3vw,3.15rem);letter-spacing:-.06em;line-height:.98;margin:0 0 .65rem;max-width:16ch}.recognition-heading strong{font-size:.9rem;font-weight:500;color:var(--text)}
+.recognition-copy{margin:0;color:var(--muted);font-size:.86rem;line-height:1.65;max-width:38rem}
 .section{padding:8rem clamp(1rem,6vw,7.8rem)}
 .section-label{color:var(--pink);padding-bottom:1.5rem}
 .about-layout{display:grid;grid-template-columns:1.15fr .75fr .55fr;gap:clamp(2rem,5vw,6rem);align-items:end}
@@ -129,6 +137,7 @@ h2{font-size:clamp(2.8rem,5.4vw,5.8rem);line-height:.98;letter-spacing:-.07em;ma
 .header-cta{display:none}
 .hero{grid-template-columns:1fr}
 .hero-art{justify-self:start;width:100%;height:350px}
+.recognition-banner{grid-template-columns:auto 1fr}.recognition-copy{grid-column:2}
 .about-layout{grid-template-columns:1fr 1fr}
 .about-block{grid-column:2}
 .section-heading{grid-template-columns:.35fr 1.3fr 1fr}
@@ -143,6 +152,7 @@ h2{font-size:clamp(2.8rem,5.4vw,5.8rem);line-height:.98;letter-spacing:-.07em;ma
 .hero{min-height:auto;padding:1rem 1rem 1.3rem}
 .hero-copy{padding:4rem 0 3rem}
 .hero-art{height:300px}
+.recognition-banner{grid-template-columns:44px 1fr;gap:1rem;padding:1.5rem 1rem}.recognition-marker{width:44px;height:58px}.recognition-copy{grid-column:1/-1;font-size:.8rem}.recognition-heading h2{font-size:1.42rem}.recognition-heading strong{font-size:.8rem}
 .pixel-cloud{transform:translate(-50%,-50%) scale(.74)}
 .hero-footer span:nth-child(2){display:none}
 .section{padding:5rem 1rem}
