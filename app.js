@@ -18,7 +18,7 @@ const coreMembers = [
   { name: 'Sree Vishnu', position: 'Community Lead', photo: 'assets/team/member-04.jpg', optimizedBase: 'assets/team/optimized/02-SreeVishnu', width: 1000, height: 1000, bio: 'Media lead.', linkedin: 'https://www.linkedin.com/in/sree-vishnu-p-s-790a46385/', github: '#' },
   { name: 'Vaibhav', position: 'Media Lead', photo: 'assets/team/member-05.jpg', optimizedBase: 'assets/team/optimized/03-Vaibhav', width: 1000, height: 1000, bio: 'Event lead.', linkedin: '#', github: '#' },
   { name: 'Shasin', position: 'Event/Logistical Lead', photo: 'assets/team/member-06.jpg', optimizedBase: 'assets/team/optimized/04-Shasin', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
-  { name: 'Ambhika', position: 'Outreach Lead', photo: 'assets/team/optimized/05-ambika.webp', optimizedBase: 'assets/team/optimized/05-ambika', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
+  { name: 'Ambika', position: 'Outreach Lead', photo: 'assets/team/optimized/05-ambika.webp', optimizedBase: 'assets/team/optimized/05-ambika', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
   { name: 'Shankerdev', position: 'Design Lead', photo: 'assets/team/member-03.jpg', optimizedBase: 'assets/team/optimized/06-Shankerdev', width: 1000, height: 1000, bio: 'Design lead.', linkedin: 'https://www.linkedin.com/in/shankar-dev-k-a28b8037a?utm_source=share_via&utm_content=profile&utm_medium=member_android', github: 'https://github.com/shankardevk' }
 ];
 
