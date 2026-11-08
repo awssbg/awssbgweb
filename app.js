@@ -12,17 +12,14 @@ const events = [
   { type: 'UPCOMING / COMMUNITY', title: 'Coming soon', date: 'DATE TBA', mode: 'LOCATION / MODE TBA', description: 'Details will be announced soon.' },
   { type: 'UPCOMING / HANDS-ON LAB', title: 'Coming soon', date: 'DATE TBA', mode: 'LOCATION / MODE TBA', description: 'Details will be announced soon.' }
 ];
-// Exactly nine editable core member entries. Keep photos in assets/team/.
+// Active core-team roster. Optimized images are maintained in assets/team/optimized/.
 const coreMembers = [
-  { name: 'Fathima Rasha', position: 'Lead', photo: 'assets/team/member-01.jpg', width: 1000, height: 1000, bio: 'Core team lead.', linkedin: '#', github: '#' },
-  { name: 'Jyothish', position: 'Tech Lead', photo: 'assets/team/member-02.jpg', width: 1000, height: 1000, bio: 'Technical lead.', linkedin: 'https://www.linkedin.com/in/jyothish-nalinakshan/', github: 'https://github.com/gunnerjyo' },
-  { name: 'Shankerdev', position: 'Design Lead', photo: 'assets/team/member-03.jpg', width: 1000, height: 1000, bio: 'Design lead.', linkedin: 'https://www.linkedin.com/in/shankar-dev-k-a28b8037a?utm_source=share_via&utm_content=profile&utm_medium=member_android', github: 'https://github.com/shankardevk' },
-  { name: 'SreeVishnu', position: 'Media Lead', photo: 'assets/team/member-04.jpg', width: 1000, height: 1000, bio: 'Media lead.', linkedin: 'https://www.linkedin.com/in/sree-vishnu-p-s-790a46385/', github: '#' },
-  { name: 'Vaibhav', position: 'Event Lead', photo: 'assets/team/member-05.jpg', width: 1000, height: 1000, bio: 'Event lead.', linkedin: '#', github: '#' },
-  { name: 'Shasin', position: 'Core', photo: 'assets/team/member-06.jpg', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
-  { name: 'Vaseem', position: 'Core', photo: 'assets/team/member-07.jpg', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
-  { name: 'Diya', position: 'Core', photo: 'assets/team/member-08.jpg', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
-  { name: 'Nafiya', position: 'Core', photo: 'assets/team/member-09.jpg', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' }
+  { name: 'Jyothish', position: 'AWS SBG Lead', photo: 'assets/team/member-02.jpg', optimizedBase: 'assets/team/optimized/01-jyothish', width: 1000, height: 1000, bio: 'Technical lead.', linkedin: 'https://www.linkedin.com/in/jyothish-nalinakshan/', github: 'https://github.com/gunnerjyo' },
+  { name: 'Sree Vishnu', position: 'Community Lead', photo: 'assets/team/member-04.jpg', optimizedBase: 'assets/team/optimized/02-SreeVishnu', width: 1000, height: 1000, bio: 'Media lead.', linkedin: 'https://www.linkedin.com/in/sree-vishnu-p-s-790a46385/', github: '#' },
+  { name: 'Vaibhav', position: 'Media Lead', photo: 'assets/team/member-05.jpg', optimizedBase: 'assets/team/optimized/03-Vaibhav', width: 1000, height: 1000, bio: 'Event lead.', linkedin: '#', github: '#' },
+  { name: 'Shasin', position: 'Event/Logistical Lead', photo: 'assets/team/member-06.jpg', optimizedBase: 'assets/team/optimized/04-Shasin', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
+  { name: 'Ambhika', position: 'Outreach Lead', photo: 'assets/team/optimized/05-ambika.webp', optimizedBase: 'assets/team/optimized/05-ambika', width: 1000, height: 1000, bio: 'Core team member.', linkedin: '#', github: '#' },
+  { name: 'Shankerdev', position: 'Design Lead', photo: 'assets/team/member-03.jpg', optimizedBase: 'assets/team/optimized/06-Shankerdev', width: 1000, height: 1000, bio: 'Design lead.', linkedin: 'https://www.linkedin.com/in/shankar-dev-k-a28b8037a?utm_source=share_via&utm_content=profile&utm_medium=member_android', github: 'https://github.com/shankardevk' }
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -31,7 +28,7 @@ $('#footer-nav').innerHTML = navigation.slice(1).map(item => `<a href="${item.hr
 $('#stats-grid').innerHTML = stats.map((item, i) => `<article class="stat"><span class="mono">0${i + 1}</span><strong>${item.value}</strong><p>${item.label}</p></article>`).join('');
 $('#events-list').innerHTML = events.map((event, i) => `<article class="event-row"><div class="event-number mono">0${i + 1}</div><div><p class="event-type mono">${event.type}</p><h3>${event.title}</h3><p>${event.description}</p></div><div class="event-meta mono"><span>${event.date}</span><span>${event.mode}</span></div><a class="event-link" href="#contact" aria-label="Register interest for ${event.title}">↗</a></article>`).join('');
 $('#team-grid').innerHTML = coreMembers.map((member, i) => {
-  const optimizedBase = member.photo.replace(/^assets\/team\//, 'assets/team/optimized/').replace(/\.[^.]+$/, '');
+  const optimizedBase = member.optimizedBase || member.photo.replace(/^assets\/team\//, 'assets/team/optimized/').replace(/\.[^.]+$/, '');
   const imageLoading = i === 0 ? 'eager' : 'lazy';
   const priority = i === 0 ? 'high' : 'auto';
   const photoMarkup = member.photo ? `<picture><source srcset="${optimizedBase}.avif" type="image/avif"><source srcset="${optimizedBase}.webp" type="image/webp"><img src="${member.photo}" alt="${member.name}" width="${member.width}" height="${member.height}" loading="${imageLoading}" decoding="async" fetchpriority="${priority}"></picture>` : `<span class="member-placeholder mono">PHOTO<br>0${i + 1}</span>`;
