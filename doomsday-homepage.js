@@ -4,7 +4,9 @@
   const START_IST = new Date('2026-11-08T00:00:00+05:30').getTime();
   const END_IST = new Date('2026-12-30T23:59:59+05:30').getTime();
   const MAX_TIMEOUT = 2147483647;
+  const INTRO_SESSION_KEY = 'aws-sbg-doomsday-intro-2026';
   let expiryTimer;
+  let introTimer;
   let active = false;
   let original;
   let style;
@@ -93,8 +95,20 @@
       body.doomsday-active .site-footer { background:linear-gradient(180deg,#0d130e,#080b09); border-top:1px solid rgba(164,214,61,.23); }
       body.doomsday-active .footer-label,body.doomsday-active .site-footer a:hover { color:var(--doomsday-green); }
       body.doomsday-active .footer-bottom { border-color:rgba(164,214,61,.18); }
+      body.doomsday-intro-active > :not(#doomsday-intro) { filter:blur(11px) saturate(.72); pointer-events:none; user-select:none; }
+      #doomsday-intro { position:fixed; z-index:2147483646; inset:0; display:grid; place-items:center; overflow:hidden; background:radial-gradient(circle at 50% 48%,rgba(101,145,54,.25),transparent 28%),linear-gradient(135deg,#09100b,#172418 48%,#080c09); opacity:1; transition:opacity .3s ease; }
+      #doomsday-intro::before { content:""; position:absolute; inset:-20%; background:repeating-linear-gradient(110deg,transparent 0 10px,rgba(193,213,187,.025) 11px 12px),radial-gradient(ellipse at 20% 30%,rgba(164,214,61,.14),transparent 25%),radial-gradient(ellipse at 80% 75%,rgba(69,104,42,.18),transparent 32%); filter:blur(8px); }
+      #doomsday-intro.is-visible .doomsday-intro__mask { animation:doomsday-mask-turn 1.65s cubic-bezier(.22,.77,.23,1) both; }
+      #doomsday-intro.is-visible .doomsday-intro__sweep { animation:doomsday-light-sweep .4s ease-out 1.27s both; }
+      #doomsday-intro.is-exiting { opacity:0; }
+      .doomsday-intro__frame { position:relative; width:min(72vw,430px); aspect-ratio:4/5; perspective:900px; filter:drop-shadow(0 24px 35px rgba(0,0,0,.58)); }
+      .doomsday-intro__mask { width:100%; height:100%; transform-style:preserve-3d; will-change:transform,opacity; }
+      .doomsday-intro__sweep { position:absolute; inset:9% 18%; pointer-events:none; opacity:0; mix-blend-mode:screen; background:linear-gradient(105deg,transparent 34%,rgba(228,255,190,.8) 49%,transparent 64%); transform:translateX(-120%) skewX(-12deg); }
+      @keyframes doomsday-mask-turn { 0% { opacity:0; transform:rotateY(-42deg) scale(.88); } 18% { opacity:1; } 62% { transform:rotateY(7deg) scale(1); } 78%,100% { opacity:1; transform:rotateY(0) scale(1); } }
+      @keyframes doomsday-light-sweep { from { opacity:0; transform:translateX(-120%) skewX(-12deg); } 20% { opacity:.8; } to { opacity:0; transform:translateX(125%) skewX(-12deg); } }
       @keyframes doomsday-reveal { from { opacity:0; transform:translateY(14px); clip-path:inset(0 0 32% 0); } to { opacity:1; transform:none; clip-path:inset(0 0 0 0); } }
-      @media (prefers-reduced-motion:reduce) { body.doomsday-active .hero-copy { animation:none; } }
+      @media (prefers-reduced-motion:reduce) { body.doomsday-active .hero-copy,#doomsday-intro.is-visible .doomsday-intro__mask,#doomsday-intro.is-visible .doomsday-intro__sweep { animation:none; } }
+      @media (max-width:650px) { .doomsday-intro__frame { width:min(88vw,380px); } }
     `;
     document.head.append(style);
   };
@@ -110,6 +124,7 @@
     document.querySelector('.hero-art')?.append(hud);
     document.body.classList.add('doomsday-active');
     active = true;
+    showIntro();
   };
 
   const restoreOriginal = () => {
@@ -117,10 +132,44 @@
     const elements = heroElements();
     Object.entries(original).forEach(([key, html]) => { if (elements[key]) elements[key].innerHTML = html; });
     document.querySelector('.doomsday-hud')?.remove();
+    removeIntro();
     document.body.classList.remove('doomsday-active');
     style?.remove();
     style = null;
     active = false;
+  };
+
+  const restoreIntroBackground = (intro) => {
+    intro?.backgroundState?.forEach((state, element) => {
+      element.inert = state.inert;
+      if (state.ariaHidden === null) element.removeAttribute('aria-hidden'); else element.setAttribute('aria-hidden', state.ariaHidden);
+    });
+  };
+
+  const removeIntro = () => {
+    clearTimeout(introTimer);
+    const intro = document.querySelector('#doomsday-intro');
+    restoreIntroBackground(intro);
+    intro?.remove();
+    document.body.classList.remove('doomsday-intro-active');
+  };
+
+  const showIntro = () => {
+    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    try { if (sessionStorage.getItem(INTRO_SESSION_KEY) === 'shown') return; } catch { return; }
+    try {
+      const intro = document.createElement('div');
+      intro.id = 'doomsday-intro';
+      intro.setAttribute('aria-hidden', 'true');
+      intro.innerHTML = `<div class="doomsday-intro__frame"><svg class="doomsday-intro__mask" viewBox="0 0 420 525" role="img" aria-label="Original weathered steel mask with emerald reflections"><defs><linearGradient id="steel" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#edf0e7"/><stop offset=".18" stop-color="#7f8882"/><stop offset=".38" stop-color="#d5d8d0"/><stop offset=".6" stop-color="#4c5651"/><stop offset=".82" stop-color="#9ca69d"/><stop offset="1" stop-color="#343d38"/></linearGradient><linearGradient id="face" x1="0" x2="1"><stop stop-color="#59635c"/><stop offset=".2" stop-color="#c5ccc3"/><stop offset=".51" stop-color="#6e7971"/><stop offset=".8" stop-color="#d7dbd0"/><stop offset="1" stop-color="#465048"/></linearGradient><linearGradient id="glow" x1="0" x2="1"><stop stop-color="#a4d63d" stop-opacity="0"/><stop offset=".48" stop-color="#c7f266" stop-opacity=".66"/><stop offset="1" stop-color="#a4d63d" stop-opacity="0"/></linearGradient><filter id="grain"><feTurbulence baseFrequency=".85" numOctaves="2" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs><path d="M210 18C128 18 78 74 78 164v117c0 83 46 175 132 224 86-49 132-141 132-224V164C342 74 292 18 210 18Z" fill="url(#steel)" stroke="#d6ddd2" stroke-opacity=".4" stroke-width="4" filter="url(#grain)"/><path d="M210 45c-64 0-103 48-103 119v106c0 70 37 145 103 189 66-44 103-119 103-189V164c0-71-39-119-103-119Z" fill="url(#face)" stroke="#242b27" stroke-width="5"/><path d="M112 160 185 136l-25 75-55 20Z" fill="#202622" stroke="#c8d1c5" stroke-opacity=".38" stroke-width="3"/><path d="m308 160-73-24 25 75 55 20Z" fill="#202622" stroke="#c8d1c5" stroke-opacity=".38" stroke-width="3"/><path d="m126 172 49-15-19 38-32 12Zm168 0-49-15 19 38 32 12Z" fill="#08100b"/><path d="M210 104 178 264l32 40 32-40Z" fill="url(#steel)" stroke="#303a34" stroke-width="4"/><path d="m210 120-15 127 15 23 15-23Z" fill="#35453a" opacity=".75"/><path d="M133 247 177 274l-12 59-40-25Z" fill="#6f7970" stroke="#252d28" stroke-width="4"/><path d="m287 247-44 27 12 59 40-25Z" fill="#6f7970" stroke="#252d28" stroke-width="4"/><path d="M142 340q68 47 136 0l-10 78q-58 45-116 0Z" fill="#29332d" stroke="#c3cbc0" stroke-opacity=".34" stroke-width="4"/><g stroke="#aeb8ad" stroke-opacity=".55" stroke-width="4"><path d="M167 360h86M163 378h94M160 396h100"/></g><g fill="#2a342d" stroke="#c2cabe" stroke-opacity=".35" stroke-width="3"><circle cx="124" cy="142" r="8"/><circle cx="296" cy="142" r="8"/><circle cx="144" cy="438" r="8"/><circle cx="276" cy="438" r="8"/></g><path d="M104 115c52-63 151-76 212-4" fill="none" stroke="url(#glow)" stroke-width="7" opacity=".75"/><path d="M140 92 166 66m-40 63 28-17m138-20-26-26m40 63-28-17M154 438l-19 18m131-18 19 18" stroke="#e5ece0" stroke-opacity=".28" stroke-width="2"/></svg><span class="doomsday-intro__sweep"></span></div>`;
+      intro.backgroundState = new Map();
+      [...document.body.children].forEach((element) => { if (element !== intro) { intro.backgroundState.set(element, { inert: element.inert, ariaHidden: element.getAttribute('aria-hidden') }); element.inert = true; element.setAttribute('aria-hidden', 'true'); } });
+      document.body.append(intro);
+      document.body.classList.add('doomsday-intro-active');
+      requestAnimationFrame(() => intro.classList.add('is-visible'));
+      sessionStorage.setItem(INTRO_SESSION_KEY, 'shown');
+      introTimer = setTimeout(() => { intro.classList.add('is-exiting'); introTimer = setTimeout(removeIntro, 310); }, reducedMotion ? 120 : 1700);
+    } catch { removeIntro(); }
   };
 
   const syncTheme = () => {
